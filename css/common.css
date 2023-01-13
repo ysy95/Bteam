@@ -87,6 +87,7 @@ footer > dl dt{
   font-size:16px;
   display: block;
   padding:0px 30px;
+  font-weight: normal;
 }
 .h_bottom .gnb > ul > li > a:hover{
   text-decoration:underline;
