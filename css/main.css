@@ -1,5 +1,320 @@
 @charset "utf-8";
+article, section{
+  width:100%;
+}
+
 
 @media screen and (min-width:1025px) {
+  .main-video {
+    width:100%; height: 700px;
+    position: relative;
+    overflow: hidden;
+  }
+  .main-video > h2{display: none;}
+  .main-video > video{
+    width:100%;
+  }
+  .main-video > p {
+    position: absolute;
+    left: 48%; bottom:20px;
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 3px #fff;
+  }
+  i.fa-arrow-down{
+    position: absolute;
+    left: 32%;bottom: 0px;
+    animation:bounce 2s infinite;
+    line-height: 70px;
+    color: #fff;
+    font-size: 2rem;
+  }
+  @keyframes bounce {
+    0%{bottom:8px;}
+    50%{bottom:-8px;}
+    100%{bottom:8px;}
+    
+  }
 
+  /* 이벤트서식 */
+  .event{
+    position: relative;
+    background-image: url('../main_img/event-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+  }
+  .title01{
+    display: flex;
+    justify-content: center;
+  }
+  .title01 > img{width:240px;}
+  .event > .e_wrap{
+    width:700px;
+    margin:0 auto;
+    padding-bottom: 50px;
+  }
+  
+  .event > .e_wrap > .title01 > h2{
+    color:#fff;
+    transform: translateY(65px);
+    font-size: 2.5rem;
+    margin-left:10px;
+  }
+  .event > .e_wrap > iframe{
+    margin-top: 20px;
+    width:100%;height: 395px;
+    border: #fff solid 4px;
+    /* width="560" height="315"  */
+  }
+  .e_wrap > ul{
+    text-indent: 7%;
+    font-size: 1.15rem;
+    margin-top: 30px;
+    border-radius: 15px;
+    line-height: 35px;
+    background: #fff;
+    padding:20px 0px 30px 0px;
+  }
+  .e_wrap > .e_txt > li:nth-of-type(4){
+    transform: translateY(-20px);
+  }
+  .e_txt > li > ul .e_sub{
+    text-indent: 20%;
+    transform: translateY(-30px);
+  }
+  .e_wrap > .e_txt >li:last-child{
+    margin-top: 10px;
+    position: relative;
+  }
+  .e_wrap > .e_txt >li:last-child img{
+    position: absolute;
+    right: 205px;bottom:-20px;
+    width:109px;
+  }
+  .e_wrap > .e_txt > li:last-child > a{
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #555;
+    padding:8px 60px; 
+    margin-left: 28%;
+    background:#2343D1;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .e_wrap > .e_txt > li:last-child > a:hover{
+    border:solid 1px #333;
+    background: #fff;
+    color: #333;
+  }
+  /* ------- 채널영역 서식 ------*/
+  .channel{
+    /* background: rgb(0, 255, 255); */
+  }
+  .ch_wrap{
+    width: 1050px;
+    margin:0 auto;
+  }
+  .ch_wrap > h2{
+    font-size:2.6rem;
+    border-bottom: solid 2px #333;
+    padding:15px 0px;
+  }
+  .ch_wrap > p{
+    padding:20px 15px;
+    width:1040px;
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: 500;
+  }
+  .ch_wrap > .ch_gallery{
+    background: #333;
+    display: grid;
+    width:100%;
+    grid-gap: 20px;
+    box-sizing: border-box;
+    padding:20px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,190px);
+  }
+  .ch_gallery .item img{width:100%;height: 100%;}
+  .ch_wrap a{
+    /* margin: 40px 40px 0px 0px; */
+    background:#2343D1;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #555;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin:25px 0 0 37%;
+    display: block;
+    width:250px; height: 50px;
+  }
+
+  .ch_wrap a:hover{
+    border:solid 1px #333;
+    background: #fff;
+    color: #333;
+  }
+
+  /* 디즈니 플러스 관련 정보 */
+  .disney_films{
+    
+  }
+  .disney_films > h2{
+    width: 1040px;
+    margin:80px auto 40px auto;
+    font-size:2.6rem;
+    border-bottom: solid 2px #333;
+    padding:15px 0px;
+  }
+
+  .disney_films img{
+    width:100%;
+    vertical-align: top;
+    
+  }
+  .disney_films > ul > li > a:hover{
+    transform: scale(101%);
+    transition: 1s ease-out;
+    filter:contrast(30%);
+  }
+
+  /* 회사 정보 영역 서식 */
+  .company{
+  
+  }
+  .company > h2{
+    width: 1040px;
+    margin:50px auto 0px auto;
+    font-size:2.6rem;
+    border-bottom: solid 2px #333;
+    padding:15px 0px;
+  }
+  .com_wrap{
+    width: 1040px;
+    margin:40px auto 60px auto ;
+    display: flex;
+    justify-content: center;
+  }
+  .com_wrap img{
+    width:350px;
+  }
+  .com_wrap p{
+    text-align: justify;
+    width:565px;
+    line-height: 45px;
+    font-size: 1.3rem;
+    margin:10px 0px 0px 65px ;
+  }
+
+
+  /* 파트너사 브랜드 영역 서식 */
+  .b_wrap{
+    width: 1040px;
+    margin:0 auto;
+  }
+  .b_wrap > h2{
+    font-size:2.6rem;
+    border-bottom: solid 2px #333;
+    padding:15px 0px;
+  }
+  .b_wrap > p{
+    width:930px;
+    padding:20px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: 500;
+  }
+  .b_wrap > .b_gallery{
+    display: grid;
+    border-radius: 10px;
+    border: solid 2px #333;;
+    background-image: url('../main_img/brand_bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-gap: 10px;
+    box-sizing: border-box;
+    padding:15px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,150px);
+  }
+  .b_gallery > .brand{
+    background: #2343D1;
+    overflow: hidden;
+    transform: translateY(24%);
+  }
+  .b_gallery .brand img{width:70%;}
+  /* 새로운소식 */
+  .news{}
+  .news > .n_wrap{
+    width: 1040px;
+    margin: 0 auto;
+  }
+  .n_wrap > h2{
+    font-size:2.6rem;
+    border-bottom: solid 2px #333;
+    padding:15px 0px;
+    display: flex;
+  }
+  .n_wrap > .news_con{
+    margin:40px 0px 100px 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .n_wrap > .news_con li > p{text-overflow: ellipsis; white-space:wrap;}
+  .n_wrap > .news_con li:not(:first-child){
+    margin-left: 30px;
+  }
+  .n_wrap > .news_con img{width: 100%;}
+  .n_wrap > .news_con li > .n_txt{
+    color:#4D92E3;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  /* 문의사항 */
+  .faq{
+  }
+  
+  .faq > .faq_wrap{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto;
+    width:1040px;
+    height: 280px;
+    border-radius: 20px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+      linear-gradient(0deg, rgba(50, 226, 184, 0.27), rgba(50, 226, 184, 0.27)), 
+      linear-gradient(180deg, #387BCB 12.96%, rgba(56, 123, 203, 0.460779) 66.99%, rgba(56, 123, 203, 0) 100%), 
+      linear-gradient(180deg, #387BCB 12.96%, rgba(56, 123, 203, 0.460779) 66.99%, rgba(56, 123, 203, 0) 100%), 
+      linear-gradient(180deg, #387BCB 12.96%, rgba(56, 123, 203, 0.460779) 66.99%, rgba(56, 123, 203, 0) 100%);
+    border-radius: 50px;
+  }
+  .faq_wrap > .faq_txt{
+    margin:auto 0px;
+  }
+  .faq_wrap h2{
+    color:#fff;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  .faq_wrap > .faq_txt > p > a {
+    color: #333;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #555;
+    padding:8px 15px;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  } 
+  .faq_wrap img{
+    transform:translateY(10%);
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  
 }

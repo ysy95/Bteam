@@ -102,6 +102,8 @@ footer > dl dt{
   background: rgba(0,0,0,.9);
   transition: 0.8s;
   display: none;
+  z-index: 10;
+  transition: .5s;
 }
 
 .sub>li{
