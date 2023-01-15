@@ -1,17 +1,13 @@
-// let ch_gallery = document.querySelector('.channel > .ch_wrap > ul');
+let gallery = document.querySelector('.ch_gallery');
 
-// // 스크롤이벤트
-// window.addEventListener('scroll', ()=>{
-//   let scrollUp = window.scrollY; //스크롤의 높이를 가져온다
-//   // console.log(scrollUp);
-//   if(scrollUp > 1000){
-//     ch_gallery.style.animate ='slideUp is ease-in';
-//   }
-// });
+window.addEventListener('scroll',()=>{
+  let scrollUp = window.scrollY;
+  // console.log('scrollY',scrollUp);
 
-
-// 탑버튼
-// $('.top_btn').click(function(){
-//   $('html,body').animate({scrollTop:'0px'},300);
-//   return false;
-// });
+  if(scrollUp > 1400){
+    gallery.style.animation = 'fadeIn 2s ease-out ';
+  }
+  else{
+    gallery.style.animation='fadeout 1s ease-out forwards';
+  }
+});

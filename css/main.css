@@ -3,6 +3,26 @@ article, section{
   width:100%;
 }
 
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      left:-400px;
+  }
+  to {
+      opacity: 1;
+      left:0px;
+  }
+}
+@keyframes fadeout{
+  from{
+      right:0px;
+      opacity: 1;
+  }
+  to{
+      right:-500px;
+      opacity: 0;
+  }
+} 
 
 @media screen and (min-width:1025px) {
   .main-video {
@@ -137,20 +157,9 @@ article, section{
     padding:20px;
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(3,190px);
-    animation: slideUp 2s ease-out;
+    /* animation: fadeIn 1s ease-out; */
   }
   .ch_gallery .item img{width:100%;height: 100%;}
-
-  @keyframes slideUp {
-    from {
-        opacity: 0; /* 흐리게 시작  */ 
-        bottom:-500px;
-    }
-    to {
-        opacity: 1;
-        bottom:0px;
-    }
-  }
 
   .ch_wrap a{
     /* margin: 40px 40px 0px 0px; */
@@ -491,20 +500,8 @@ article, section{
     padding:20px;
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(3,190px);
-    animation: slideUp 2s ease-out;
   }
   .ch_gallery .item img{width:100%;height: 100%;}
-
-  @keyframes slideUp {
-    from {
-        opacity: 0; /* 흐리게 시작  */ 
-        bottom:-500px;
-    }
-    to {
-        opacity: 1;
-        bottom:0px;
-    }
-  }
 
   .ch_wrap a{
     /* margin: 40px 40px 0px 0px; */
