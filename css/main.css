@@ -107,6 +107,8 @@ article, section{
     background: #fff;
     color: #333;
   }
+
+  }
   /* ------- 채널영역 서식 ------*/
   .channel{
     /* background: rgb(0, 255, 255); */
@@ -128,6 +130,7 @@ article, section{
     font-weight: 500;
   }
   .ch_wrap > .ch_gallery{
+    position: relative;
     background: #333;
     display: grid;
     width:100%;
@@ -136,8 +139,21 @@ article, section{
     padding:20px;
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(3,190px);
+    animation: fadeInUp 2s ease-out;
   }
   .ch_gallery .item img{width:100%;height: 100%;}
+
+  @keyframes fadeInUp {
+    from {
+        opacity: 0; /* 흐리게 시작  */ 
+        bottom:-500px;
+    }
+    to {
+        opacity: 1;
+        bottom:200px;
+    }
+}
+
   .ch_wrap a{
     /* margin: 40px 40px 0px 0px; */
     background:#2343D1;
@@ -231,8 +247,6 @@ article, section{
   }
   .b_wrap > .b_gallery{
     display: grid;
-    border-radius: 10px;
-    border: solid 2px #333;;
     background-image: url('../main_img/brand_bg.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -243,11 +257,28 @@ article, section{
     grid-template-rows: repeat(3,150px);
   }
   .b_gallery > .brand{
-    background: #2343D1;
     overflow: hidden;
     transform: translateY(24%);
+    position: relative;
   }
   .b_gallery .brand img{width:70%;}
+  .b_gallery > .brand:first-child img{padding:20px 0px 0px 60px;}
+  .b_gallery > .brand:nth-child(2) img{padding:50px 0px 0px 30px;}
+  .b_gallery > .brand:nth-child(3) img{padding:5px 0px 0px 15px;}
+  .b_gallery > .brand:nth-child(4) img{padding:20px 0px 0px 60px;}
+  .b_gallery > .brand:nth-child(5) img{padding:13px 0px 0px 30px;}
+  .b_gallery > .brand:last-child img{padding:0px 0px 12px 40px;width:52%;}
+  .b_gallery > .brand img:hover{
+    animation: shake 1s infinite;
+  }
+  @keyframes shake {
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(-5deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(5deg);}
+    100%{transform: rotate(0deg);}
+  }
+
   /* 새로운소식 */
   .news{}
   .news > .n_wrap{
@@ -270,11 +301,29 @@ article, section{
     margin-left: 30px;
   }
   .n_wrap > .news_con img{width: 100%;}
-  .n_wrap > .news_con li > .n_txt{
-    color:#4D92E3;
+  .n_wrap > .news_con li p > a{
     font-weight: 600;
+    text-overflow: ellipsis;
+    color: #333;
+  }
+  .n_wrap > .news_con p:last-child{margin-top: 20px;}
+  .n_wrap > .news_con li > .n_txt a{
+    color:#4D92E3;
     font-size: 1rem;
   }
+  .n_wrap > .news_con li p >.tag{
+    color:#333;
+    font-weight: normal;
+    border: solid 1px #333;
+    border-radius: 10px;
+    margin-right: 8px;
+    padding:5px;
+    box-shadow: 0.7px 1.5px 1px #666;
+
+  }
+
+
+
   /* 문의사항 */
   .faq{
   }
