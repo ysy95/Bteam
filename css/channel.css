@@ -1,117 +1,175 @@
 @charset "utf-8";
 *{margin: 0px ;padding: 0px;}
-main{height: 3413px;}
-article{
+/* 메인 높이 */
+main{height: 2750px;}
+
+/* 채널 상단페이지 감싸는 큰박스 */
+.cd_top{
   position: relative;
 }
+
+
+/* 백그라운드 이미지 */
+
+
 #back{
-   /* border: 1px solid #ff0; */
   width: 100%;
+  filter: brightness(50%);
+  /* border: 1px solid #ff0; */
 }
- article > h1 img{
-  position: absolute; top: 30%; left: 40%;
-  margin-left: 2px;
+
+/* 상단 로고 */
+ .cd_top > h1 img{
+   position: absolute; top: 20%; left: 35%;
+   margin-left: 2px;
+   width: 30%
+   /* border: 1px solid #f0f; */
   /* display: inline-block; */
-  width: 319px;
-  height: 113px;
+
 }
-main div img{
-  border: 1px solid #f0f;
-  width: 50px
+
+
+/* 상단 sns 클릭버튼 */
+.sns{
+ 
 }
+.cd_top > .sns{
+  position: absolute; bottom: 10%;left: 42%;
+  display: flex;
+  /* border: 1px solid #f0f; */
+}
+.cd_top > .sns > li > a img{
+width: 40px; height: 40px;
+margin-left: 30px;
+ /* width: 30%; */
+  /* border: 1px solid #ff0; */
+}
+
+
+
 /* 파트너사 */
 .channel{
+  width: 1040px;
+  height: 75px;
   border: 1px solid #000;
-  margin: 70px auto;
+  box-sizing: border-box;
+  margin: 73px auto;
   display: flex;
-  justify-content: space-between;
-  width: 784px;
-  height: 97px;
-  
+  justify-content: space-around;
 }
-/* .channel > ul > li > a img{
-  width: 123px;
-  height: 61px;
-
+.channel > li{
 
 }
- */
-
- 
- .channel>li>a img{
-
-  /* margin-right: 10px; */
- }
-
-.channel>li>a img:first-child{
-  width: 105px;
-  height: 54px;
+.channel > li > a img{
+ width: 172px;
+ height: 73px;
+ padding: 0px;
+ object-fit: contain;
+ border-right: 1px solid #000;
 }
-.channel>li>a img:nth-child(2){
-  width: 105px;
-  height: 54px;
-}
-.channel>li>a img:nth-child(3){
-  width: 105px;
-  height: 54px;
-}
-.channel>li>a img:nth-child(4){
-  width: 105px;
-  height: 54px;
-}
-.channel>li>a img:nth-child(5){
-  width: 105px;
-  height: 54px;
-}
-.channel>li>a img:last-child{
-  width: 105px;
-  height: 54px;
+.channel > .f1 > a img{
+  width: 173px;
+  border: none;
 }
 
+.channel > .d1:hover{background: linear-gradient(180deg, #649EAD 0%, rgba(100, 158, 173, 0) 100%);}
+.channel > .p1:hover{background: linear-gradient(180deg, #649EAD 0%, rgba(100, 158, 173, 0) 100%);}
+.channel > .m1:hover{background: linear-gradient(180deg, #649EAD 0%, rgba(100, 158, 173, 0) 100%);}
+.channel > .s1:hover{background: linear-gradient(180deg, #649EAD 0%, rgba(100, 158, 173, 0) 100%);}
+.channel > .n1:hover{background: linear-gradient(180deg, #649EAD 0%, rgba(100, 158, 173, 0) 100%);;}
+.channel > .f1:hover{background: linear-gradient(180deg, #649EAD 0%, rgba(100, 158, 173, 0) 100%);}
 
 
 
+/* 필름 */
+.films{
+  margin: 0px auto;
+  width: 1040px;
+  display: flex;
+  border-bottom: 3px solid #000;
+  position: relative;
+  /* border-bottom: 1px solid #000; */ 
+}
+.films> p{
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  /* border: 1px solid #f0f; */
+}
+.films > div{
+  position: absolute;right: 0%; bottom: 10%;
+  display: flex;
+}
+.films > div > p {
+  color: #000; 
+  font-weight: bold;
+}
+.films > div > p > a{
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  /* border: 1px  solid #ff3; */
+  margin:0px 6px
+}
 
 
-/* 영화 */
-.content-wrap{
+/* 검색창 */
+.search_box{
+  margin: 0px auto;
+  width: 1040px;
+  position: relative;
+  /* border: 1px solid #000; */
+}
+.s_button{
+  box-sizing: border-box;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+
+
+/* <<영화 컨텐츠>>*/
+.asd{
+  position: relative;
+  margin: 0 auto;
+  width: 1040px;
+  display: block;
+}
+/* 디즈니 컨텐층 */
+.content-wrap
+{position: absolute;
   width: 1040px;
   height: 1878px;
   margin: 0px auto;
 }
-content>h4{
-  font-size: 20px;
-  margin-bottom: 7.5px;
+.wrap{
+  margin-top: 70px;
 }
 .movie{
- 
+  
   display: grid;
   grid-template-columns: repeat(3,333px);
   grid-template-rows: repeat((3,567px));
   grid-column-gap: 20px;
   grid-row-gap: 100px;
 }
-.wrap{
-  margin-top: 70px;
-}
-
 .text{ 
   transform: translateY(-5px);
   width: 331px; height: 90px;
-  margin-top: 0px;
   border: 1px solid #000;
+  color: #000;
 }
-
 .text  > h4{
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 8px 0px 8px 8px;
 }
 .text > p{
-  
   font-size: 12px;
+  margin-left: 8px;
 }
 li > a>  img{
   width: 333px;
@@ -119,7 +177,23 @@ li > a>  img{
   margin-bottom: 0px;
 }
 .star{
-
+  padding-right: 5px;
   font-size: 20px;
   font-weight: bold;
+}
+
+
+/* 하단 번호  */
+.number_wrap{
+  width: 300px;
+  margin: 0px auto;
+}
+.number{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.number > li >a{
+  font-size: 16px;
+  color: #000;
 }
