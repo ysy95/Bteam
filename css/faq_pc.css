@@ -9,8 +9,8 @@
   a{text-decoration: none;}
   
   /* article 서식 1 */
-  article{margin-top: 50px !important; }
-  .article01{margin:0px auto;width: 864px; height: 274px; border: 1px solid #333;}
+  article{margin-top: 80px !important; }
+  .article01{margin:0px auto;width: 864px; height: 274px;}
   .article01 h2,.article02 h2,.article03 h2{
     font-size: 32px;
     font-weight: 700;
@@ -61,7 +61,7 @@
   .f_box01 div a:first-of-type{margin-right: 19px;}
 
   /* article 서식 2 */
-  .article02{margin: 0px auto; width: 864px; height: 250px; border: 1px solid #ff0;}
+  .article02{margin: 0px auto; width: 864px; height: 250px;}
   .article02 > ul{display: flex;}
   .article02 > ul >li{
     display: inline-block;
@@ -97,5 +97,20 @@
   }
   .article03 > div:not(:last-child){margin-bottom: 16px;}
   .article03 > div >h3,.article03 > div >i,.article03 > div >p{color: #fff;}
-  .article03 > div >h3{padding: 16px 0px 16px 32px;}
+  .article03 > div >h3{padding: 16px 0px 16px 32px; font-size: 24px; line-height: 32.69px; font-weight: 400;}
+  .article03 > div{position: relative;}
+  .article03 > div >i{position: absolute; font-size: 36px; right: 24px; top:15px}
+  .article03 > div  p {
+    padding: 16px 56px 16px 32px;
+    font-size: 20px;
+    line-height: 32px;
+    display: none;
+  }
+  .article03 div p a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  footer{margin-top: 50px; height: 70px; background: #0A2647;}
 }
