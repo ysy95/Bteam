@@ -8,13 +8,13 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  margin:150px 0px 200px 0px;
+  margin:150px 0px 150px 0px;
   }
 
 .signin{
   /* background-color: rgba(151,178,211,.8); */
   width:430px;
-  height:450px;
+  height:500px;
   }
 
 .signin h2 img{
@@ -55,7 +55,11 @@
     border:1px solid #000000;
 
   }
-    
+
+  .text::placeholder{
+    transform:translateX(10px);
+  }
+
 
   .text:hover{
     background:#fff;
@@ -69,21 +73,42 @@
     }
   
 
-    .signin a {
+    .progress{
       display: block;
       border:1px solid #000000;
+      border-radius:5px;
       background-color: #0A2647;
-      width:314px;
+      width:300px;
       height:50px;
-      margin-top:35px;
+      margin:15px 0px 10px 10px;
+      
     }
 
     .signin a p{
-      font-size:16px;
+      font-size:14px;
       text-align:center;
       margin-top:15px;
     }
 
+    .law{
+      /* background-color: aquamarine; */
+      margin-top:20px;
+      border:1px solid #d9d9d9;
+      background-color: #d9d9d9;
+      border-radius: 10px;
+      font-size:12px;
+      line-height:15px;
+    }
+
+    .law p{
+      width:290px;
+      margin-left:10px;
+      margin-top:20px;
+      }
+    .law p a{
+      color:blue;
+      text-decoration:underline;
+    }
 
 
 

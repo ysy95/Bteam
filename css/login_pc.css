@@ -10,7 +10,7 @@ article{
   /* background-color: bisque; */
 }
 
-article h1 img{
+article h2 img{
   margin:50px 0px 30px 0px;
   width:10rem;
   margin-left:50%;
@@ -54,7 +54,7 @@ article h1 img{
   }
   
   .int_area input{
-    background-color:#d9d9d996;
+    background-color:#d9d9d9;
     border: 2px solid rgb(77, 69, 69);
     margin:0px 0px 15px 60px;
     border-radius: 5px;
@@ -67,6 +67,8 @@ article h1 img{
     cursor:pointer;
     
   }
+
+
   .int_area input:hover{
     background:#fff;
   }
