@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Noto+Sans:wght@300;400;500&display=swap');
 /* 웹폰트 noto sans */
 body{
-  font-family: 'Noto Sans','맑은 고딕', arial;
-  font-family: 'Noto Sans KR','맑은 고딕', arial;
+  font-family: "Noto Sans","Noto Sans KR","맑은 고딕", "arial";
   color:#333;
   overflow-x:hidden;
 }

@@ -2,6 +2,7 @@
 article, section{
   width:100%;
 }
+.main-video > h2{display: none;}
 /* 브랜드로고 쉐이킹 */
 @keyframes shake {
   0%{transform:rotate(0deg);}
@@ -38,14 +39,19 @@ article, section{
       opacity: 0;
   }
 } 
+.ch_gallery .item img{width:100%;height: 100%;}
+.disney_films img{
+  width:100%;
+  vertical-align: top;
+}
 
 @media screen and (min-width:1025px) {
+
   .main-video {
     width:100%; height: 700px;
     position: relative;
     overflow: hidden;
   }
-  .main-video > h2{display: none;}
   .main-video > video{
     width:100%;
   }
@@ -167,8 +173,6 @@ article, section{
     grid-template-rows: repeat(3,190px);
     /* animation: fadeIn 1s ease-out; */
   }
-  .ch_gallery .item img{width:100%;height: 100%;}
-
   .ch_wrap a{
     /* margin: 40px 40px 0px 0px; */
     background:#2343D1;
@@ -197,11 +201,6 @@ article, section{
     font-size:2.6rem;
     border-bottom: solid 2px #333;
     padding:15px 0px;
-  }
-
-  .disney_films img{
-    width:100%;
-    vertical-align: top;
   }
   .disney_films > ul > li > a:hover{
     /* transform: scale(1.02); */
@@ -366,19 +365,16 @@ article, section{
 
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-  
   .main-video {
     width:100%;
     position: relative;
-    overflow: hidden;
   }
-  .main-video > h2{display: none;}
   .main-video > video{
     width:100%;
   }
   .main-video > p {
     position: absolute;
-    left: 48%; bottom:20px;
+    left: 45%; bottom:20px;
     width:70px;
     height: 70px;
     border-radius: 50%;
@@ -405,49 +401,49 @@ article, section{
     display: flex;
     justify-content: center;
   }
-  .title01 > img{width:240px;}
+  .title01 > img{width:15rem;}
   .event > .e_wrap{
-    width:700px;
+    width:43rem;
     margin:0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
   }
   
   .event > .e_wrap > .title01 > h2{
     color:#fff;
-    transform: translateY(65px);
-    font-size: 2.5rem;
-    margin-left:10px;
+    transform: translateY(4rem);
+    font-size: 2.4rem;
+    margin-left:0.625rem;
   }
   .event > .e_wrap > iframe{
-    margin-top: 20px;
-    width:100%;height: 395px;
+    margin-top: 1.25rem;
+    width:100%;height: 24rem;
     border: #fff solid 4px;
     /* width="560" height="315"  */
   }
   .e_wrap > ul{
     text-indent: 7%;
     font-size: 1.15rem;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     border-radius: 15px;
-    line-height: 35px;
+    line-height: 2.1875rem;
     background: #fff;
-    padding:20px 0px 30px 0px;
+    padding:1.25rem 0px 1.875rem 0px;
   }
   .e_wrap > .e_txt > li:nth-of-type(4){
-    transform: translateY(-20px);
+    transform: translateY(-1.25rem);
   }
   .e_txt > li > ul .e_sub{
     text-indent: 20%;
-    transform: translateY(-30px);
+    transform: translateY(-1.875rem);
   }
   .e_wrap > .e_txt >li:last-child{
-    margin-top: 10px;
+    margin-top: 0.625rem;
     position: relative;
   }
   .e_wrap > .e_txt >li:last-child img{
     position: absolute;
-    right: 205px;bottom:-20px;
-    width:109px;
+    right: 205px;bottom:-1.25rem;
+    width:6.8125rem;
   }
   .e_wrap > .e_txt > li:last-child > a{
     border-radius: 15px;
@@ -470,17 +466,17 @@ article, section{
     /* background: rgb(0, 255, 255); */
   }
   .ch_wrap{
-    width: 1050px;
+    width: 51rem;
     margin:0 auto;
   }
   .ch_wrap > h2{
     font-size:2.6rem;
     border-bottom: solid 2px #333;
-    padding:15px 0px;
+    padding:0.9375rem 0px;
   }
   .ch_wrap > p{
-    padding:20px 15px;
-    width:1040px;
+    padding:1.25rem 0.9375rem;
+    width:50rem;
     font-size: 1.3rem;
     text-align: justify;
     font-weight: 500;
@@ -490,55 +486,40 @@ article, section{
     background: #333;
     display: grid;
     width:100%;
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
     box-sizing: border-box;
-    padding:20px;
+    padding:1.25rem;
     grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(3,190px);
+    grid-template-rows: repeat(3,10.625rem);
   }
-  .ch_gallery .item img{width:100%;height: 100%;}
-
   .ch_wrap a{
     /* margin: 40px 40px 0px 0px; */
     background:#2343D1;
     border-radius: 15px;
     box-shadow: 1px 1px 3px #555;
     text-align: center;
-    line-height: 50px;
+    line-height: 3.125rem;
     font-size: 1.3rem;
     font-weight: 400;
-    margin:25px 0 0 37%;
+    margin:1.5625rem 0 0 37%;
     display: block;
-    width:250px; height: 50px;
+    width:15.625rem; height: 3.125rem;
   }
-
-  .ch_wrap a:hover{
-    border:solid 1px #333;
-    background: #fff;
-    color: #333;
-  }
-
   /* 디즈니 플러스 관련 정보 */
   .disney_films{
     
   }
   .disney_films > h2{
-    width: 1040px;
-    margin:80px auto 40px auto;
+    width: 49rem;
+    margin:5rem auto 2.5rem auto;
     font-size:2.6rem;
     border-bottom: solid 2px #333;
-    padding:15px 0px;
+    padding:0.9375rem 0px;
   }
-
-  .disney_films img{
-    width:100%;
-    vertical-align: top;
-    
-  }
-  .disney_films > ul > li > a:hover{
+  .disney_films > ul > li > a{
     /* transform: scale(1.02); */
     transition: 1s ease-out;
-    filter:contrast(30%);
+    
   }
 
   /* 회사 정보 영역 서식 */
@@ -546,45 +527,46 @@ article, section{
   
   }
   .company > h2{
-    width: 1040px;
-    margin:50px auto 0px auto;
+    width: 49rem;
+    margin:5rem auto 0px auto;
     font-size:2.6rem;
     border-bottom: solid 2px #333;
-    padding:15px 0px;
+    padding:0.9375rem 0px;
   }
   .com_wrap{
-    width: 1040px;
-    margin:40px auto 60px auto ;
+    width: 49rem;
+    margin:2.5rem auto 3.75rem auto ;
     display: flex;
     justify-content: center;
   }
   .com_wrap img{
-    width:350px;
+    width:14.5rem;
+    height: 7.875rem;
   }
   .com_wrap p{
     text-align: justify;
-    width:565px;
-    line-height: 45px;
+    width:35rem;
+    line-height: 2.8125rem;
     font-size: 1.3rem;
-    margin:10px 0px 0px 65px ;
+    margin:0.625rem 0px 0px 4rem ;
   }
 
 
   /* 파트너사 브랜드 영역 서식 */
   .b_wrap{
-    width: 1040px;
+    width: 49rem;
     margin:0 auto;
   }
   .b_wrap > h2{
     font-size:2.6rem;
     border-bottom: solid 2px #333;
-    padding:15px 0px;
+    padding:0.9375rem 0px;
   }
   .b_wrap > p{
-    width:930px;
-    padding:20px;
+    width:48.125rem;
+    padding:1.25rem;
     margin: 0 auto;
-    line-height: 40px;
+    line-height: 2.5rem;
     font-size: 1.3rem;
     text-align: justify;
     font-weight: 500;
@@ -598,27 +580,25 @@ article, section{
     box-sizing: border-box;
     padding:15px;
     grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(3,150px);
+    grid-template-rows: repeat(3,7.5rem);
   }
   .b_gallery > .brand{
     overflow: hidden;
-    transform: translateY(24%);
+    transform: translateY(18%);
     position: relative;
   }
-  .b_gallery .brand img{width:70%;}
-  .b_gallery > .brand:first-child img{padding:20px 0px 0px 60px;}
-  .b_gallery > .brand:nth-child(2) img{padding:50px 0px 0px 30px;}
+  .b_gallery .brand img{width:65%;}
+  .b_gallery > .brand:first-child img{padding:1.25rem 0px 0px 3.75rem;}
+  .b_gallery > .brand:nth-child(2) img{padding:50px 0px 0px 1.875rem;}
   .b_gallery > .brand:nth-child(3) img{padding:5px 0px 0px 15px;}
-  .b_gallery > .brand:nth-child(4) img{padding:20px 0px 0px 60px;}
-  .b_gallery > .brand:nth-child(5) img{padding:13px 0px 0px 30px;}
+  .b_gallery > .brand:nth-child(4) img{padding:1.25rem 0px 0px 3.75rem;}
+  .b_gallery > .brand:nth-child(5) img{padding:13px 0px 0px 1.875rem;}
   .b_gallery > .brand:last-child img{padding:0px 0px 12px 40px;width:52%;}
-  .b_gallery > .brand img:hover{
-    animation: shake 1s infinite;
-  }
+
   /* 새로운소식 */
   .news{}
   .news > .n_wrap{
-    width: 1040px;
+    width: 49rem;
     margin: 0 auto;
   }
   .n_wrap > h2{
@@ -628,13 +608,13 @@ article, section{
     display: flex;
   }
   .n_wrap > .news_con{
-    margin:40px 0px 100px 0px;
+    margin:2.5rem 0px 6.25rem 0px;
     display: flex;
     justify-content: space-around;
   }
   .n_wrap > .news_con li > p{text-overflow: ellipsis;}
   .n_wrap > .news_con li:not(:first-child){
-    margin-left: 30px;
+    margin-left: 1.875rem;
   }
   .n_wrap > .news_con img{width: 100%;}
   .n_wrap > .news_con li p > a{
@@ -642,7 +622,7 @@ article, section{
     text-overflow: ellipsis;
     color: #333;
   }
-  .n_wrap > .news_con p:last-child{margin-top: 20px;}
+  .n_wrap > .news_con p:last-child{margin-top: 1.25rem;}
   .n_wrap > .news_con li > .n_txt a{
     color:#4D92E3;
     font-size: 1rem;
@@ -667,9 +647,9 @@ article, section{
   .faq > .faq_wrap{
     display: flex;
     justify-content: space-evenly;
-    margin: 40px auto;
-    width:1040px;
-    height: 280px;
+    margin: 2.5rem auto;
+    width:48rem;
+    height: 15rem;
     border-radius: 20px;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
       linear-gradient(0deg, rgba(50, 226, 184, 0.27), rgba(50, 226, 184, 0.27)), 
@@ -683,20 +663,340 @@ article, section{
   }
   .faq_wrap h2{
     color:#fff;
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+    font-size: 1.625rem;
+    margin-bottom: 1.875rem;
   }
   .faq_wrap > .faq_txt > p > a {
     color: #333;
     background: #fff;
     border-radius: 15px;
     box-shadow: 1px 1px 2px #555;
-    padding:8px 15px;
-    font-size: 1.2rem;
-    margin-left: 10px;
+    padding:0.5rem 0.9rem;
+    font-size: 1.05rem;
+    margin-left: 0.625rem;
   } 
   .faq_wrap img{
     transform:translateY(10%);
   }
+
+}
+
+@media screen and (max-width:767px) {
+  
+  .main-video {
+    width:100%;
+    position: relative;
+  }
+  .main-video > video{
+    width:160%;
+    transform: translateX(-20%);
+  }
+  .main-video > p {
+    position: absolute;
+    left: 44%; bottom:20px;
+    width:3.125rem;
+    height:3.125rem;
+    border-radius: 50%;
+    border: solid 3px #fff;
+  }
+  i.fa-arrow-down{
+    position: absolute;
+    left: 30%;bottom: 0px;
+    animation:bounce 2s infinite;
+    line-height: 3.125rem;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  .event{
+    position: relative;
+    background-image: url('../main_img/event-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+  }
+  .title01{
+    display: flex;
+    justify-content: center;
+    height: 3.5rem;
+  }
+  .title01 > img{width:6.125rem;}
+  .event > .e_wrap{
+    width:19.8rem;
+    margin:0 auto;
+    padding:3.125rem 0rem;
+  }
+  
+  .event > .e_wrap > .title01 > h2{
+    color:#fff;
+    transform: translateY(1.4rem);
+    font-size: 1.2rem;
+    margin-left:0.5rem;
+    font-weight: 500;
+  }
+  .event > .e_wrap > iframe{
+    margin-top: 1.25rem;
+    width:100%;height: 11.5rem;
+    border: #fff solid 3px;
+  }
+  .e_wrap > ul{
+    width:100%;
+    font-size: 0.875rem;
+    margin-top: 1.875rem;
+    border-radius: 15px;
+    line-height: 1.875rem;
+    background: #fff;
+    padding:1.3rem 0px 1.875rem 0px;
+  }
+  .e_wrap > .e_txt > li{width: 18rem; margin-left:1.2rem;}
+  .e_wrap > .e_txt > li:nth-of-type(4){
+    transform: translateY(-0.9rem);
+  }
+  .e_txt > li > ul .e_sub{
+    text-indent: 23%;
+    transform: translateY(-1.9rem);
+  }
+  .e_wrap > .e_txt >li:last-child{
+    margin: 1.5rem 1.7rem;
+    position: relative;
+  }
+  .e_wrap > .e_txt >li:last-child img{
+    position: absolute;
+    right: 2.5rem;bottom:-0.5rem;
+    width:4.9rem;
+  }
+  .e_wrap > .e_txt > li:last-child > a{
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #555;
+    padding:0.5rem 3.75rem; 
+    margin-left: 15%;
+    background:#2343D1;
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+  
+  /* ------- 채널영역 서식 ------*/
+  .ch_wrap{
+    width: 20rem;
+    margin:0 auto;
+  }
+  .ch_wrap > h2{
+    font-size:1.25rem;
+    border-bottom: solid 3px #333;
+    box-shadow: 0px 2px 0px #ccc;
+    padding:0.9375rem 0px;
+  }
+  .ch_wrap > p{
+    padding:1.25rem 0rem;
+    width:19.5rem;
+    font-size: 0.875rem;
+    text-align: justify;
+    font-weight: 500;
+  }
+  .ch_wrap > .ch_gallery{
+    position: relative;
+    background: #333;
+    display: grid;
+    width:100%;
+    grid-gap: 0.625rem;
+    box-sizing: border-box;
+    padding:0.625rem;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4,8.4rem);
+  }
+  .ch_wrap a{
+    /* margin: 40px 40px 0px 0px; */
+    background:#2343D1;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #555;
+    text-align: center;
+    line-height: 2.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin:1.6rem 0 0 5.7rem;
+    display: block;
+    width:8.5rem; height: 2.2rem;
+  }
+  /* 디즈니 플러스 관련 정보 */
+  .disney_films{
+    
+  }
+  .disney_films > h2{
+    width: 19.6rem;
+    margin:5rem auto 2.5rem auto;
+    font-size:1.25rem;
+    border-bottom: solid 3px #333;
+    box-shadow: 0px 2px 0px #ccc;
+    padding:0.9375rem 0rem;
+
+  }
+  .disney_films > ul > li > a{
+    /* transform: scale(1.02); */
+    transition: 1s ease-out;
+    
+  }
+
+  /* 회사 정보 영역 서식 */
+  .company{
+  
+  }
+  .company > h2{
+    width: 19.6rem;
+    margin:5rem auto 0px auto;
+    font-size:1.25rem;
+    border-bottom: solid 2px #333;
+    padding:0.9375rem 0px;
+    box-shadow: 0px 2px 0px #ccc;
+  }
+  .com_wrap{
+    width: 19.6rem;
+    margin:2rem auto 3.75rem auto ;
+  }
+  .com_wrap img{
+    width:11.5rem;
+    height: 6.25rem;
+    margin: 0 auto;
+  }
+  .com_wrap p{
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 0.875rem;
+
+  }
+
+
+  /* 파트너사 브랜드 영역 서식 */
+  .b_wrap{
+    width: 19.6rem;
+    margin:0 auto;
+  }
+  .b_wrap > h2{
+    width: 19.6rem;
+    margin:5rem auto 0px auto;
+    font-size:1.25rem;
+    border-bottom: solid 2px #333;
+    padding:0.9375rem 0px;
+    box-shadow: 0px 3px 0px #ccc;
+  }
+  .b_wrap > p{
+    padding:1.25rem;
+    margin: 0 auto;
+    line-height: 2rem;
+    font-size: 0.875rem;
+    text-align: justify;
+    font-weight: 400;
+  }
+  .b_wrap > .b_gallery{
+    display: grid;
+    background-image: url('../main_img/m_brand_bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-gap: 0.5rem;
+    box-sizing: border-box;
+    padding:0.9rem;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3,6.25rem);
+  }
+  .b_gallery > .brand{
+    overflow: hidden;
+    transform: translateY(8%);
+    position: relative;
+  }
+  .b_gallery .brand img{width:65%;}
+  .b_gallery > .brand:first-child img{padding:1.25rem 0px 0px 3.75rem;}
+  .b_gallery > .brand:nth-child(2) img{padding:50px 0px 0px 1.875rem;}
+  .b_gallery > .brand:nth-child(3) img{padding:5px 0px 0px 15px;}
+  .b_gallery > .brand:nth-child(4) img{padding:1.25rem 0px 0px 3.75rem;}
+  .b_gallery > .brand:nth-child(5) img{padding:13px 0px 0px 1.875rem;}
+  .b_gallery > .brand:last-child img{padding:0px 0px 12px 40px;width:52%;}
+
+  /* 새로운소식 */
+  .news{}
+  .news > .n_wrap{
+    width: 19.6rem;
+    margin: 0 auto;
+  }
+  .n_wrap > h2{
+    width: 19.6rem;
+    margin:5rem auto 0px auto;
+    font-size:1.25rem;
+    border-bottom: solid 2px #333;
+    padding:0.9375rem 0px;
+    box-shadow: 0px 3px 0px #ccc;
+  }
+  .n_wrap > .news_con{
+    margin:2.5rem 0px 6.25rem 0px;
+  }
+  .n_wrap > .news_con img{width: 100%;}
+  .n_wrap > .news_con li p > a{
+    font-weight: 500;
+    color: #333;
+    font-size: 0.8rem;
+  }
+  .n_wrap > .news_con p:last-child{margin-top: 1.25rem;}
+  .n_wrap > .news_con li > .n_txt a{
+    color:#4D92E3;
+    font-size: 1rem;
+  }
+  .n_wrap > .news_con li p >.tag{
+    color:#333;
+    font-size: 0.8rem;
+    font-weight: normal;
+    border: solid 1px #333;
+    border-radius: 10px;
+    margin-right: 8px;
+    padding:5px;
+    box-shadow: 0.7px 1.5px 1px #666;
+
+  }
+
+
+
+  /* 문의사항 */
+  .faq{
+  }
+  
+  .faq > .faq_wrap{
+    position:relative;
+    justify-content:center;
+    margin: 0 auto;
+    width:19.5rem;
+    height: 15rem;
+    border-radius: 20px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+      linear-gradient(0deg, rgba(50, 226, 184, 0.27), rgba(50, 226, 184, 0.27)), 
+      linear-gradient(180deg, #387BCB 12.96%, rgba(56, 123, 203, 0.460779) 66.99%, rgba(56, 123, 203, 0) 100%), 
+      linear-gradient(180deg, #387BCB 12.96%, rgba(56, 123, 203, 0.460779) 66.99%, rgba(56, 123, 203, 0) 100%), 
+      linear-gradient(180deg, #387BCB 12.96%, rgba(56, 123, 203, 0.460779) 66.99%, rgba(56, 123, 203, 0) 100%);
+    border-radius: 50px;
+  }
+  .faq_wrap > .faq_txt{
+    margin:auto 0;
+    width:16.5rem;
+  }
+  .faq_wrap h2{
+    color:#fff;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+  }
+  .faq_wrap > .faq_txt > p > a {
+    color: #333;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #555;
+    padding:0.5rem 0.9rem;
+    font-size: 0.825rem;
+    transform: translateY(10rem);
+  } 
+  .faq_wrap img{
+    transform:translateY(10%);
+    width:11.625rem;
+    position: absolute;
+    top:2rem;
+
+  }
+
+
 
 }
