@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@media screen and (min-width:1025px){
+  
+
+  main{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:150px 0px 200px 0px;
+  }
+
+.signin{
+  /* background-color: rgba(151,178,211,.8); */
+  width:430px;
+  height:450px;
+  }
+
+.signin h2 img{
+  width:160px;
+  height:88px;
+  margin-left:50%;
+  transform:translateX(-50%);
+  }
+
+.sbox{
+  /* background-color: rgb(36, 215, 206); */
+  width:320px;
+  height:290px;
+  margin:0px auto;
+  position:relative;
+  }
+
+  .step{
+    font-size:12px;
+    font-weight: bold;
+    margin:20px 0px 10px 0px;
+  }
+
+  .sbox p:nth-of-type(2){
+    font-size:18px;
+    font-weight: bold;
+  }
+  .sbox p:nth-of-type(3){
+    margin:5px 0px 30px 0px;
+    font-size:14px;
+  }
+
+  .text{
+    width:305px;
+    height:50px;
+    margin-bottom:5px;
+    background:#d9d9d9;
+    border:1px solid #000000;
+
+  }
+    
+
+  .text:hover{
+    background:#fff;
+  }
+
+  .agreement{
+      /* position:absolute; */
+      font-size:13px;
+      display:inline;
+      margin-left:5px;
+    }
+  
+
+    .signin a {
+      display: block;
+      border:1px solid #000000;
+      background-color: #0A2647;
+      width:314px;
+      height:50px;
+      margin-top:35px;
+    }
+
+    .signin a p{
+      font-size:16px;
+      text-align:center;
+      margin-top:15px;
+    }
+
+
+
+
+
+
+}
