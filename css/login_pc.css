@@ -1,16 +1,17 @@
 @charset "utf-8";
 
-
-article{
+/* pc버전 */
+@media screen and (min-width:1025px){
+  article{
   /* margin-top:50px; */
   margin-left:50%;
   margin-bottom:100px;
   transform:translate(-50%);
   height:710px;
   /* background-color: bisque; */
-}
+  }
 
-article h2 img{
+  article h2 img{
   margin:50px 0px 30px 0px;
   width:10rem;
   margin-left:50%;
@@ -18,34 +19,34 @@ article h2 img{
   }
 
 
-.top{
+  .top{
   color:#0A2647;
-/* background-color: rgb(231, 89, 229); */
+  /* background-color: rgb(231, 89, 229); */
   }
-.top p{
+  .top p{
   margin-bottom: 30px;
   font-size:14px;
   font-weight:bold;
   text-align:center;
   }
-.top h2{
+  .top h2{
   font-size:32px;
   margin-bottom:10px;
   text-align:center;
   }
- .top p img{
+  .top p img{
   width:160px;
   height:160px;
- } 
+  } 
 
- /* Form부분 */
+  /* Form부분 */
 
- .sub_form{
+  .sub_form{
   /* background-color: aquamarine; */
   width:430px;height:260px;
   margin:0px auto;
   padding-bottom: 30px;
-}
+  }
 
   .int_area input,.btn_area button{
     width:314px;
@@ -73,45 +74,284 @@ article h2 img{
     background:#fff;
   }
 
-.new{
+  .new{
   /* background-color: aqua; */
   width:430px;
   margin: 10px 0px 0px 230px;
   color:#0A2647;
-}
+  }
 
-.new a{
+  .new a{
   font-weight: bold;
   color:#0A2647
-}
+  }
 
 
-.form{
+  .form{
   margin-top:5px;
   margin-bottom: 50px;
   margin-left:65px;
   font-size:14px;}
 
-.caption a{
+  .caption a{
   color:#000;
   /* font-size: 13px; */
-}
-.find{
+  }
+  .find{
   margin-left:105px;
-}
-.line{
+  }
+  .line{
   /* background-color: aqua; */
   border-top:1px solid #000;
-}
-.signin{
+  }
+  .signin{
   margin-left:75px;
   margin-top:10px;
-}
+  }
 
-.signin a{
+  .signin a{
   padding-left:5px;
   font-weight:bold;
+  }
+  .signin a:hover{
+  text-decoration: underline; 
+  }
+  }
+
+/* 테블릿버전 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+  article{
+    /* margin-top:50px; */
+    margin-left:50%;
+    margin-bottom:100px;
+    transform:translate(-50%);
+    height:710px;
+    /* background-color: bisque; */
+    }
+  
+    article h2 img{
+    margin:50px 0px 30px 0px;
+    width:10rem;
+    margin-left:50%;
+    transform:translate(-50%);
+    }
+  
+  
+    .top{
+    color:#0A2647;
+    /* background-color: rgb(231, 89, 229); */
+    }
+    .top p{
+    margin-bottom: 30px;
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+    }
+    .top h2{
+    font-size:32px;
+    margin-bottom:10px;
+    text-align:center;
+    }
+    .top p img{
+    width:160px;
+    height:160px;
+    } 
+  
+    /* Form부분 */
+  
+    .sub_form{
+    /* background-color: aquamarine; */
+    width:430px;height:260px;
+    margin:0px auto;
+    padding-bottom: 30px;
+    }
+  
+    .int_area input,.btn_area button{
+      width:314px;
+      height:50px;
+      /* margin:0px auto; */
+    }
+    
+    .int_area input{
+      background-color:#d9d9d9;
+      border: 2px solid rgb(77, 69, 69);
+      margin:0px 0px 15px 60px;
+      border-radius: 5px;
+    }
+    .btn_area button{
+      background-color:#0a2647;
+      color:#fff;
+      font-weight:bold;
+      margin-left:63px;
+      cursor:pointer;
+      
+    }
+  
+  
+    .int_area input:hover{
+      background:#fff;
+    }
+  
+    .new{
+    /* background-color: aqua; */
+    width:430px;
+    margin: 10px 0px 0px 230px;
+    color:#0A2647;
+    }
+  
+    .new a{
+    font-weight: bold;
+    color:#0A2647
+    }
+  
+  
+    .form{
+    margin-top:5px;
+    margin-bottom: 50px;
+    margin-left:65px;
+    font-size:14px;}
+  
+    .caption a{
+    color:#000;
+    /* font-size: 13px; */
+    }
+    .find{
+    margin-left:105px;
+    }
+    .line{
+    /* background-color: aqua; */
+    border-top:1px solid #000;
+    }
+    .signin{
+    margin-left:75px;
+    margin-top:10px;
+    }
+  
+    .signin a{
+    padding-left:5px;
+    font-weight:bold;
+    }
+    .signin a:hover{
+    text-decoration: underline; 
+    } 
 }
-.signin a:hover{
-  text-decoration: underline;
+
+/* 모바일버전 */
+@media screen and (max-width:767px) {
+  article{
+    /* margin-top:50px; */
+    margin-left:50%;
+    margin-bottom:100px;
+    transform:translate(-50%);
+    height:710px;
+    /* background-color: bisque; */
+    }
+  
+    article h2 img{
+    margin:50px 0px 30px 0px;
+    width:10rem;
+    margin-left:50%;
+    transform:translate(-50%);
+    }
+  
+  
+    .top{
+    color:#0A2647;
+    /* background-color: rgb(231, 89, 229); */
+    }
+    .top p{
+    margin-bottom: 30px;
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+    }
+    .top h2{
+    font-size:32px;
+    margin-bottom:10px;
+    text-align:center;
+    }
+    .top p img{
+    width:160px;
+    height:160px;
+    } 
+  
+    /* Form부분 */
+  
+    .sub_form{
+    /* background-color: aquamarine; */
+    width:430px;height:260px;
+    margin:0px auto;
+    padding-bottom: 30px;
+    }
+  
+    .int_area input,.btn_area button{
+      width:314px;
+      height:50px;
+      /* margin:0px auto; */
+    }
+    
+    .int_area input{
+      background-color:#d9d9d9;
+      border: 2px solid rgb(77, 69, 69);
+      margin:0px 0px 15px 0px;
+      border-radius: 5px;
+    }
+    .btn_area button{
+      background-color:#0a2647;
+      color:#fff;
+      font-weight:bold;
+      /* margin-left:0px; */
+      cursor:pointer;
+      
+    }
+  
+  
+    .int_area input:hover{
+      background:#fff;
+    }
+  
+    .new{
+    /* background-color: aqua; */
+    width:430px;
+    margin: 10px 0px 0px 230px;
+    color:#0A2647;
+    }
+  
+    .new a{
+    font-weight: bold;
+    color:#0A2647
+    }
+  
+  
+    .form{
+    margin-top:5px;
+    margin-bottom: 50px;
+    /* margin-left:65px; */
+    font-size:14px;}
+  
+    .caption a{
+    color:#000;
+    /* font-size: 13px; */
+    }
+    .find{
+    margin-left:105px;
+    }
+    .line{
+    width:80%;
+    /* background-color: aqua; */
+    border-top:1px solid #000;
+    margin-left:-5%;
+    }
+    .signin{
+    margin-left:30px;
+    margin-top:10px;
+    }
+  
+    .signin a{
+    padding-left:5px;
+    font-weight:bold;
+    }
+    .signin a:hover{
+    text-decoration: underline; 
+    }  
 }
