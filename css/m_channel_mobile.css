@@ -1,9 +1,8 @@
 @charset "utf-8";
-
-/* pc버전 */
-@media screen and (min-width:1025px){
+/* 모바일버전 */
+@media screen and (max-width:767px) {
   /* 추후 높이 사이즈 조정 필요 */
-  main{height:2500px;}
+  main{height:5000px;}
 
 
 
@@ -26,16 +25,16 @@
   }
   /* 각 배너 로고사이즈 */
   #disney .cbanner h2 img{
-    width:20rem; height:8rem;
+    width:14rem; height:7rem;
 
   }
   #pixar .cbanner h2 img{
-    width:20rem; height:10rem;
+    width:17rem; height:9rem;
     bottom:40%;
   }
 
   #marvel .cbanner h2 img{
-    width:20rem;height:6rem;
+    width:18rem;height:6rem;
     bottom:45%;
   }
   #starwars .cbanner h2 img{
@@ -61,14 +60,12 @@
 
 
   .cbanner div a img{
-    width:4rem;
-    height:4rem;
+    width:3rem;
+    height:3rem;
     margin:10px;
     cursor:pointer;
   }
 
 
-
-
-
+  
 }
