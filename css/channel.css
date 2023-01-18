@@ -4,7 +4,7 @@
 
 
 /* 채널 상단페이지 감싸는 큰박스 */
-#p_wrap,#m_wrap,#s_wrap,#n_wrap,#f_wrap{display: none;}
+.p_wrap,.m_wrap,.s_wrap,.n_wrap,.f_wrap{display: none;}
 
 .d1_top{
   position: relative;
