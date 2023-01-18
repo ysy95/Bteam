@@ -5,9 +5,7 @@
   /* 추후 높이 사이즈 조정 필요 */
   main{height:100000px;}
 
-  section{
-    height:px;
-  }
+
 
   .cupper{
     display:inline-block;
@@ -32,11 +30,27 @@
 
   }
   #pixar .cbanner h2 img{
-    width:20rem; height:4rem;
-    bottom:50%;
+    width:20rem; height:10rem;
+    bottom:40%;
+  }
+
+  #marvel .cbanner h2 img{
+    width:20rem;height:6rem;
+    bottom:45%;
+  }
+  #starwars .cbanner h2 img{
+    width:20rem; height:6rem;
+    bottom:45%;
   }
   
-
+  #national .cbanner h2 img{
+    width:20rem;height:6rem;
+    bottom:45%;
+  }
+  #twentyth .cbanner h2 img{
+    width:20rem; height:10rem;
+  }
+  
 
   .cbanner div {
     position:absolute;
