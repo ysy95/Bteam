@@ -1,51 +1,54 @@
 @charset "utf-8";
 *{margin: 0px ;padding: 0px;}
 /* 메인 높이 */
-main{height: 2750px;}
+
 
 /* 채널 상단페이지 감싸는 큰박스 */
-.cd_top{
+#p_wrap,#m_wrap,#s_wrap,#n_wrap,#f_wrap{display: none;}
+
+.d1_top{
+  position: relative;
+  /* border-bottom: 3px solid #000; */
+}
+.d1_top::after{
+  display: block;
+  content: "";
+  height: 25.25vw;
+}
+.d1_top > div{
+  position: absolute;
+}
+
+.d1_top > div .asd{
+  width: 100%;
   position: relative;
 }
-
-
-/* 백그라운드 이미지 */
-
-
-#back{
+.d1_top> div > .asd> img{
   width: 100%;
   filter: brightness(50%);
-  /* border: 1px solid #ff0; */
 }
-
-/* 상단 로고 */
- .cd_top > h1 img{
-   position: absolute; top: 20%; left: 35%;
-   margin-left: 2px;
-   width: 30%
-   /* border: 1px solid #f0f; */
-  /* display: inline-block; */
-
+.d1_top > div >.asd >h1 img{
+  width: 23%;
+  position: absolute; top: 25%; left: 38%;
 }
-
-
-/* 상단 sns 클릭버튼 */
+/* sns */
 .sns{
- 
-}
-.cd_top > .sns{
-  position: absolute; bottom: 10%;left: 42%;
   display: flex;
-  /* border: 1px solid #f0f; */
+  justify-content: space-around;
+  position: absolute; bottom: 8%; left: 42%;
+  margin: 0,auto;
+  /* width: 20%; */
 }
-.cd_top > .sns > li > a img{
-width: 40px; height: 40px;
-margin-left: 30px;
- /* width: 30%; */
-  /* border: 1px solid #ff0; */
+.sns > li{text-align: center;}
+.sns > li img{
+  margin-right: 50px;
+  width: 3vw;
 }
-
-
+/* sns4개 */
+#s_wrap,#n_wrap > .sns> li img{
+  position: absolute; 
+}
+/* sns5개 */
 
 /* 파트너사 */
 .channel{
@@ -53,24 +56,36 @@ margin-left: 30px;
   height: 75px;
   border: 1px solid #000;
   box-sizing: border-box;
-  margin: 73px auto;
+  margin: 5px auto;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 .channel > li{
+width: 173.3PX;
+border-right: 1px solid #000;
+text-align: center;
+line-height: 75px;
+}
+.channel > li > img{
+width: 100px;
+padding: 0px;
+}
+.p1{
+  padding-top: 7px;
+}
+.n1 img{
+  padding-top: 9px !important;
+  transform: scale(1.3);
+}
+.channel > li:not(:nth-child(3)) > img{
+  padding-top: 12px;
+}
 
-}
-.channel > li > a img{
- width: 172px;
- height: 73px;
- padding: 0px;
- object-fit: contain;
- border-right: 1px solid #000;
-}
-.channel > .f1 > a img{
-  width: 173px;
-  border: none;
-}
+
+
+
+
 
 .channel > .d1:hover{background: linear-gradient(180deg, #649EAD 0%, rgba(100, 158, 173, 0) 100%);}
 .channel > .p1:hover{background: linear-gradient(180deg, #649EAD 0%, rgba(100, 158, 173, 0) 100%);}
@@ -88,15 +103,13 @@ margin-left: 30px;
   display: flex;
   border-bottom: 3px solid #000;
   position: relative;
-  /* border-bottom: 1px solid #000; */ 
 }
 .films> p{
   font-size: 40px;
   font-weight: bold;
   color: #000;
-  /* border: 1px solid #f0f; */
 }
-.films > div{
+.films > div:first-of-type{
   position: absolute;right: 0%; bottom: 10%;
   display: flex;
 }
@@ -108,73 +121,89 @@ margin-left: 30px;
   font-size: 16px;
   font-weight: bold;
   color: #000;
-  /* border: 1px  solid #ff3; */
   margin:0px 6px
 }
 
 
 /* 검색창 */
-.search_box{
-  margin: 0px auto;
-  width: 1040px;
-  position: relative;
-  /* border: 1px solid #000; */
+.search_box {
+  position: relative; left: 69%; top: 68px; 
+  z-index: 999;
 }
 .s_button{
-  box-sizing: border-box;
-  height: 30px;
-  position: absolute;
-  top: 15px;
-  right: 0px;
+  width: 220px; height: 32px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid #000;
+  z-index: 1001;
+}
+.fa-search{
+  font-size: 22px;
+  position: absolute; right: 4%;top: 12%;
+  z-index: 101;
 }
 
 
 /* <<영화 컨텐츠>>*/
-.asd{
+.a-content-wrap{
   position: relative;
   margin: 0 auto;
   width: 1040px;
   display: block;
 }
-/* 디즈니 컨텐층 */
+.a-content-wrap::after{
+  display: block;
+  content: "";
+  height: 1100px;
+}
+/* 디즈니 컨텐츠 */
 .content-wrap
 {position: absolute;
   width: 1040px;
-  height: 1878px;
   margin: 0px auto;
 }
 .wrap{
   margin-top: 70px;
 }
+#m-channel,#p-channel,#s-channel,#n-channel,#f-channel{display: none;}
 .movie{
-  
   display: grid;
   grid-template-columns: repeat(3,333px);
-  grid-template-rows: repeat((3,567px));
+  grid-template-rows: repeat((3,600px));
   grid-column-gap: 20px;
-  grid-row-gap: 100px;
+  grid-row-gap: 70px;
+  width: 333px;
+  height: 300px ;
+  margin-bottom: 0px;
 }
+
+.movie > li > a>  img{
+  width: 333px;
+  height: 204px;
+  margin-bottom: 0px;
+}
+
+/* 텍트스 */
 .text{ 
   transform: translateY(-5px);
   width: 331px; height: 90px;
   border: 1px solid #000;
   color: #000;
 }
-.text  > h4{
+.text  > h2{
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   font-size: 20px;
   margin: 8px 0px 8px 8px;
 }
+#s-channel h2:first-child{
+  font-size: 14px;
+  
+}
 .text > p{
   font-size: 12px;
   margin-left: 8px;
-}
-li > a>  img{
-  width: 333px;
-  height: 477px;
-  margin-bottom: 0px;
 }
 .star{
   padding-right: 5px;
@@ -189,7 +218,7 @@ li > a>  img{
   margin: 0px auto;
 }
 .number{
-  margin-top: 100px;
+  margin: 60px auto;
   display: flex;
   justify-content: space-around;
 }

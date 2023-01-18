@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DisneyKoera_SignIn</title>
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!--기본서식,글꼴,색상,링크 -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+  <!-- Signin -->
+  <link rel="stylesheet" href="./css/signin_pc.css" type="text/css">
+  <!-- tablet버전 -->
+  <!-- 공통서식 -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+
+<body>
+  <!-- 헤더영역 -->
+  <input type="checkbox" id="toggle">
+  <!-- 헤더영역 -->
+  <header>
+    <div class="h_top">
+      <h1>
+        <a href="index.html" title="메인페이지로 바로가기">
+          <img src="./img/main_logo.png" alt="상단로고">
+        </a>
+      </h1>
+      <nav class="lnb">
+        <ul>
+          <li><a href="login.html" title="로그인">로그인</a></li>
+          <li><a href="signin.html" title="회원가입">회원가입</a></li>
+          <li><a href="https://www.disneyplus.com/ko-kr" title="디즈니 플러스 바로가기">Disney+</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <label for="toggle" class="total_btn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <div class="h_bottom">
+      <nav class="gnb">
+        <label for="toggle" class="close_btn">
+          <i class="fa-light fa-xmark"></i>
+        </label>
+        <ul>
+          <li><a href="about.html" title="회사소개">About
+              <i class="fa-solid fa-chevron-down"></i>
+          </a>
+            <ul class="sub">
+              <li><a href="#none" title="회사소개">회사소개</a></li>
+            <li><a href="#none" title="회사연혁">회사연혁</a></li>
+            <li><a href="#none" title="파트너사">파트너사</a></li>
+            <li><a href="#none" title="Contact us">Contact us</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="careers" title="채용정보">Careers
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            
+            <ul class="sub">
+              <li><a href="#none" title="인재상">인재상</a></li>
+            <li><a href="#none" title="채용정보">채용정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="channel.html" title="채널">Channel
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="sub">
+              <li><a href="channel.html" title="디즈니">Disney</a></li>
+              <li><a href="channel.html" title="픽사">Pixar</a></li>
+              <li><a href="channel.html" title="마블">Marvel</a></li>
+              <li><a href="channel.html" title="스타워즈">Star Wars</a></li>
+              <li><a href="channel.html" title="네이셔널 지오그래픽">National Geographic </a></li>
+              <li><a href="channel.html" title="20세기 스튜디오">20th Century Studios</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="news.html" title="새로운소식">News
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="sub">
+              <li><a href="news.html" title="새로운소식">News</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="faq.html" title="문의사항">FAQ
+              <i class="fa-solid fa-chevron-down"></i>
+            </a> 
+              <ul class="sub">
+                <li><a href="#none" title="1대1 문의하기">1:1 문의하기</a></li>
+                <li><a href="#none" title="1대1 답변확인">1:1 답변확인</a></li>
+                <li><a href="#none" title="디즈니플러스 시청">디즈니&#43; 시청</a></li>
+                <li><a href="#none" title="디즈니플러스 문제해결">디즈니&#43; 문제해결</a></li>
+                <li><a href="#none" title="계정과 결제">계정 &amp; 결제</a></li>
+              </ul>
+          </li>
+        </ul>
+      </nav> 
+    </div>
+  </header>
+
+  <!-- 메인영역 -->
+  <main>
+    <section class="signin">
+      <h2><img src="./images/disney_korea_logo.png" alt="logo"></h2>
+     <div class="sbox">
+      <p class="step">1/3단계</p>
+      <p>이메일을 입력하세요.</p>
+      <p>이 이메일과 비밀번호로 디즈니+ 로그인도 가능합니다.</p>
+
+      <label><input type="text" name="id" class="text" placeholder="아이디" maxlength="10" ></label>
+      <label><input type="checkbox" name="agreement"><span class="agreement">예, 디즈니코리아에 관한 최신 소식,특별 혜택 및 기타 정보를 받아보겠습니다. (선택)</span></label>
+
+      <div class="law">
+        <p>디즈니코리아는 위의 사용자 동의에 따라 사용자 데이터를 이용해 디즈니코리아 관련 정보를 발송합니다.
+          커뮤니케이션 설정은 언제든지 변경하실 수 있습니다.
+          디즈니는 <a href="#" title="개인정보 처리방침">개인정보 처리방침</a> 및 <a href="#" title="개인정보 처리방침 부속서">개인정보 처리방침 부속서</a>에 명시된 대로 사용자 정보를 이용할 수 있습니다.
+        </p>
+      <a href ="#" title="signin" class="progress"><p>동의하고 진행하기</p></a>
+      </div>
+    </div> 
+    </section>
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer>
+
+    <dl>
+      <dt>푸터영역정보</dt>
+      <dd class="f_logo">
+        <h1>
+          <img src="./img/main_logo.png" alt="메인로고">
+        </h1>
+      </dd>
+      <dd>
+        <p>대표자 : 김소연</p>
+        <p>사업자 등록번호 : 00-000-0000</p>
+        <p>연락처: 00-000-0000 | 팩스: 000-0000-0000</p>
+        <p>소재지: 서울 강남구 00로 000 00000건물 0층</p>
+      </dd>
+      <dd class="box">&emsp;
+      </dd>
+      <dd class="f_last"><a href="#none" title="이용약관" class="info">이용약관</a></dd>
+    
+      <dd class="f_last"><a href="#none" title="개인정보처리방침">개인정보처리방침</a></dd>
+      <dd class="f_last">
+        <select onChange='siteUrl(this)'>
+          <option value="#">Family site</option>
+          <option value="https://thewaltdisneycompany.com/" >Disney</option>
+          <option value="https://www.pixar.com/">Pixar</option>
+          <option value="https://www.marvel.com/">Marvel</option>
+          <option value="https://www.starwars.com/">Star Wars</option>
+          <option value="https://www.nationalgeographic.com/">National Geographic</option>
+          <option value="https://www.20thcenturystudios.com/">20th Century Studios</option>
+        </select>
+      </dd>
+    </dl>
+    <address>&copy;Disney &copy;Disney/Pixar &copy;MARVEL &copy; &amp; &#8482; Lucasfilm Ltd. &copy;2021 20CS</address>
+</footer>
+
+  
+</body>
+</html>
+
+
+
+

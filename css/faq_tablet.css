@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  h2,h3{font-family: 'Noto Sans KR','Noto Sans',Arial, Helvetica, sans-serif; color: #333;}
+  a{text-decoration: none;}
+
+  /* article 1 서식 */
+  
+  article{margin-top: 50px !important; }
+  .article01{margin:0px auto;width: 784px; height: 274px;}
+  .article01 h2,.article02 h2,.article03 h2{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .fbox_wrap01{display: flex; margin-top: 24px;}
+  .fbox_wrap01 div:first-child{margin-right: 20px;}
+  .icon01{
+    width: 80px; height: 80px;
+    margin: 63px 32px 63px 32px;
+  }
+  .icon02{
+    width: 120px; height: 120px;
+    margin: 43px 8px 43px 16px;
+  }
+  .f_box01{
+    display: flex;
+    width:382px; height: 206px;
+    border: 2px solid #0A2647;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  .f_box01 h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 14px;
+  }
+  .f_txt01{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    line-height: 28px;
+  }
+  .f_box01 strong{
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 33px;
+  }
+  .f_box01 a{
+    padding: 4px 11px 6px 11px; 
+    border: 1px solid #0A2647;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 8px;
+    display: inline-block;
+    color:#333;
+  }
+  .f_box01 div a:first-of-type{margin-right: 12px;}
+
+  /* article 2 서식 */
+  .article02{margin: 0px auto; width: 784px; height: 250px;}
+  .article02 > ul{display: flex;}
+  .article02 > ul >li{
+    display: inline-block;
+    width: 248px;
+    height: 182px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #333; margin-top: 24px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+  }
+  .article02 > ul >li:not(:last-child){
+    margin-right: 20px;
+  }
+  .article02 > ul img{width: 68px; height: 68px; margin: 30px 90px 24px 90px;}
+  .f_txt02{margin-bottom: 27px; color: #333;}
+  .article02 ul li:hover{
+    border: 1px solid #146ff5;
+    background: rgba(20, 111, 245, 0.1);
+    border-radius: 5px;
+  }
+  /* article 3 서식 */
+  dl,dt,dd{margin: 0px; padding: 0px;}
+  .article03{margin: 0px auto; width: 784px; margin-bottom: 50px;}
+  .article03 h2{margin-bottom: 24px;}
+  .article03 > div{
+    width: 783px; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #0A2647;
+  }
+  .article03 > div:not(:last-child){margin-bottom: 16px;}
+  .article03 > div dt,.article03 > div i,.article03 > div {color: #fff;}
+  .article03 > div dt{
+    padding: 16px 0px 16px 32px; 
+    font-size: 24px; 
+    line-height: 32.69px; 
+    font-weight: 400; 
+    position: relative; 
+    }
+  .article03 > div i{position: absolute; font-size: 36px; right: 24px; top:15px;} 
+  .article03 dd {
+    padding: 16px 56px 16px 32px;
+    font-size: 20px;
+    line-height: 32px;
+    display: none;
+  }
+  .article03 div dd a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
