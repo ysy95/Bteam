@@ -1,0 +1,84 @@
+@media screen and (max-width:767px){
+
+  /* 상단 */
+
+
+
+
+  /* 채널,필름,검색창 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 영화 컨텐츠 */
+  .cfilm{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid #333; */
+    width: 100%;
+  }
+  .cfilm::after{
+    display: block;
+    content: "";
+    height: 200px;
+  }
+  .cfilm > li{
+    width: 50%;
+
+  }
+  .cfilm > li img{
+    width: 92%; height: 60%;
+    margin: 0px auto;
+  }
+  .cfilm > li > ul{
+    width: 91%;
+    border: 1px solid #333;
+    transform: translateY(-3px);
+    margin-bottom: 20%;
+  }
+  .list1 >li{
+    margin: 5px 1px 0px 2px;
+  }
+
+  .list1 > li:first-child{
+    float:left; font-size: 20px;
+    font-weight: bold;
+  }
+
+  .list1 > li:nth-child(2){
+    text-align:right;
+    font-size: 17px;
+    color: #f00;
+  }
+
+  .list1 > li:nth-child(3){
+    clear: both;
+    margin-top: 25px;
+    font-size: 16px;
+  }
+
+  .list1 > li:last-child{
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+
+
+
+}
