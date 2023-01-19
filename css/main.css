@@ -3,6 +3,16 @@ article, section{
   width:100%;
 }
 .main-video > h2{display: none;}
+.disney_films li:hover::after{
+  display: block;
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.5);
+  top:0px;left:0px;
+  z-index: 100; 
+}
 /* 브랜드로고 쉐이킹 */
 @keyframes shake {
   0%{transform:rotate(0deg);}
@@ -13,9 +23,9 @@ article, section{
 }
 /* 화살표 바운스 */
 @keyframes bounce {
-  0%{bottom:8px;}
-  50%{bottom:-8px;}
-  100%{bottom:8px;}
+  0%{bottom:5px;}
+  50%{bottom:-5px;}
+  100%{bottom:5px;}
   
 }
 /* 채널 갤러리효과 */
@@ -46,7 +56,7 @@ article, section{
 }
 a[title="맨위로올라가기"]{
   position: fixed;
-  bottom:20px;right:35px;
+  bottom:20px;right:20px;
   width:50px;
   z-index: 5;
 }
@@ -67,7 +77,6 @@ a[title="맨위로올라가기"] img{
   .main-video {
     width:100%;
     position: relative;
-    height: 880px;
   }
   .main-video > video{
     width:100%;
@@ -75,7 +84,7 @@ a[title="맨위로올라가기"] img{
   }
   .main-video > p {
     position: absolute;
-    left: 49%; bottom:70px;
+    left: 47.5%; bottom:120px;
     width:50px;
     height: 50px;
     border-radius: 50%;
@@ -93,6 +102,7 @@ a[title="맨위로올라가기"] img{
   .event{
     background: rgb(255, 255, 255);
     position: relative;
+    top:-60px;
     background-image: url('../main_img/event-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -222,23 +232,38 @@ a[title="맨위로올라가기"] img{
     border-bottom: solid 3px #333;
     padding:15px 0px;
   }
-  .disney_films > ul > li {position:relative;}
-  .disney_films > ul > li:hover + .film_txt{
-    transform: scale(1.02);
-    transition: 1s ease-out;
-    filter:contrast(30%);
-    opacity: 1;
+  .disney_films > ul > li {
+    position:relative;
+    height:350px;
   }
+  .disney_films > ul > li:first-child{
+    background-image: url('../main_img/movie1.png');
+    background-size: cover;}
+  .disney_films > ul > li:nth-child(2){background-image: url('../main_img/movie2.png');background-size: cover;}
+  .disney_films > ul > li:last-child{background-image: url('../main_img/movie3.png');background-size: cover;}
   .disney_films > ul > li > .film_txt{
     position:absolute;
-    left:30%; top:25%;
-    line-height: 60px;
+    left:0px; top:40px;
+    line-height: 80px;
     color:#fff;
     margin:0 auto;
-    font-size: 30px;
+    font-size: 50px;
     opacity: 0;
+    z-index:200;
 
   }
+  .disney_films li:hover::after{
+    z-index:100;
+    display: block;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    top:0px;left:0px;
+    
+  }
+  
 
   /* 회사 정보 영역 서식 */
   .company{}
@@ -407,7 +432,7 @@ a[title="맨위로올라가기"] img{
 
 }
 
-
+/* 태블릿 */
 @media screen and (min-width:768px) and (max-width:1024px) {
   .main-video {
     width:100%;
@@ -418,24 +443,26 @@ a[title="맨위로올라가기"] img{
   }
   .main-video > p {
     position: absolute;
-    left: 45%; bottom:80px;
-    width:70px;
-    height: 70px;
+    left: 47%; bottom:80px;
+    width:30px;
+    height: 30px;
     border-radius: 50%;
     border: solid 3px #fff;
   }
   i.fa-arrow-down{
     position: absolute;
-    left: 32%;bottom: 0px;
+    left: 26%;bottom: 0px;
     animation:bounce 2s infinite;
-    line-height: 70px;
+    line-height: 30px;
     color: #fff;
-    font-size: 2rem;
+    font-size: 20px;
   }
 
   /* 이벤트서식 */
   .event{
+    background: #fff;
     position: relative;
+    top:-40px;
     background-image: url('../main_img/event-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -558,18 +585,37 @@ a[title="맨위로올라가기"] img{
     border-bottom: solid 2px #333;
     padding:0.9375rem 0px;
   }
-
-
-  .disney_films > ul > li {position: relative;}
-  .disney_films > ul > li > .film_txt{
-    position:absolute;
-    left:20%; top:23%;
-    color:#fff;
-    width:80%;
-    font-size: 1.5rem;
-
+  .disney_films > ul > li {
+    position:relative;
+    height:300px;
+  }
+  .disney_films > ul > li:first-child{
+    background-image: url('../main_img/movie1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .disney_films > ul > li:nth-child(2){
+    background-image: url('../main_img/movie2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 
   }
+  .disney_films > ul > li:last-child{
+    background-image: url('../main_img/movie3.png');
+    background-size: cover;
+      background-repeat: no-repeat;
+}
+  .disney_films > ul > li > .film_txt{
+    position:absolute;
+    left:0px; top:40px;
+    line-height: 80px;
+    color:#fff;
+    margin:0 auto;
+    font-size: 2rem;
+    opacity: 0;
+  }
+
+
   /* 회사 정보 영역 서식 */
   .company{
   
@@ -746,29 +792,32 @@ a[title="맨위로올라가기"] img{
   .main-video {
     width:100%;
     position: relative;
+    top:45px;
   }
   .main-video > video{
     width:100%;
+    
   }
   .main-video > p {
     position: absolute;
-    left: 43%; bottom:35px;
-    width:3.125rem;
-    height:3.125rem;
+    left: 47%; bottom:50px;
+    width:20px;
+    height:20px;
     border-radius: 50%;
     border: solid 3px #fff;
   }
   i.fa-arrow-down{
     position: absolute;
-    left: 28%;bottom: 0px;
+    left: 27.5%;bottom: 0px;
     animation:bounce 2s infinite;
-    line-height: 3.125rem;
+    line-height: 1.5rem;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 11px;
   }
   
   .event{
-    position: relative;
+    background: #fff;
+    position: relative;top:25px;
     background-image: url('../main_img/event-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -795,7 +844,7 @@ a[title="맨위로올라가기"] img{
   }
   .event > .e_wrap > iframe{
     margin-top: 1.25rem;
-    width:100%;height: 12rem;
+    width:100%;height: 14rem;
     border: #fff solid 3px;
   }
   .e_wrap > ul{
@@ -818,25 +867,33 @@ a[title="맨위로올라가기"] img{
   .e_wrap > .e_txt >li:last-child{
     margin: 12% 19%;
     position: relative;
-    width:300px;
+    width:250px;
   }
   .e_wrap > .e_txt >li:last-child img{
     position: absolute;
-    left: 8.7rem;bottom:-0.5rem;
+    right: 1.2rem;bottom:0rem;
     width:4.9rem;
   }
   .e_wrap > .e_txt > li:last-child > a{
     border-radius: 15px;
     box-shadow: 1px 2px 2px #555;
-    padding:0.5rem 3.75rem; 
-    justify-content: center;
+    text-align: center;
+    width:12rem;height: 2.1875rem; 
     background:#2343D1;
     font-weight: 400;
     font-size: 0.875rem;
-    margin-left: 3%;
+    margin:0 auto;
+    line-height: 2.1875rem;
+    display: block;
+    position: absolute;
+    bottom:0.5rem;
   }
   
   /* ------- 채널영역 서식 ------*/
+  .channel{
+    position: relative;
+    top:40px;
+  }
   .ch_wrap{
     width: 80%;
     margin:0 2.5rem;
@@ -857,17 +914,16 @@ a[title="맨위로올라가기"] img{
     position: relative;
     background: #333;
     display: grid;
-    width:100%;
+    width:20rem;
     grid-gap: 10px;
     box-sizing: border-box;
     padding:0.625rem;
     margin:0 auto;
     grid-template-columns: repeat(2,auto);
-    grid-template-rows: repeat(4,8rem);
+    grid-template-rows: repeat(4,7.5rem);
   }
   .ch_wrap > .ch_gallery li:last-child{display: none;}
   .ch_wrap a{
-    /* margin: 40px 40px 0px 0px; */
     background:#2343D1;
     border-radius: 15px;
     box-shadow: 1px 1px 3px #555;
@@ -894,16 +950,37 @@ a[title="맨위로올라가기"] img{
     padding:0.9375rem 0rem;
 
   }
-  .disney_films > ul > li {position: relative;}
+  .disney_films > ul > li {
+    position:relative;
+    height:300px;width:100%;
+  }
+  .disney_films > ul > li:first-child{
+    background-image: url('../main_img/m_movie1.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+  }
+  .disney_films > ul > li:nth-child(2){
+    background-image: url('../main_img/m_movie2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .disney_films > ul > li:last-child{
+    background-image: url('../main_img/m_movie3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-1rem);
+  }
   .disney_films > ul > li > .film_txt{
     position:absolute;
-    left:20%; top:18%;
+    left:-20%; top:2.8rem;
+    line-height: 4rem;
     color:#fff;
-    width:80%;
-
-
+    margin:0 auto;
+    font-size: 1rem;
+    opacity: 0;
+    z-index: 101;
   }
-
+  
 
   /* 회사 정보 영역 서식 */
   .company{
@@ -965,7 +1042,7 @@ a[title="맨위로올라가기"] img{
     box-sizing: border-box;
     padding:0.9rem;
     grid-template-columns: repeat(2,auto);
-    grid-template-rows: repeat(3,6.25rem);
+    grid-template-rows: repeat(3,6rem);
   }
   .b_gallery > .brand{
     overflow: hidden;
@@ -1069,7 +1146,7 @@ a[title="맨위로올라가기"] img{
     margin:0 auto;
     position: absolute;
     bottom:13%;left:22%;
-    width:80%;
+    width:75%;
   }
   .faq_wrap > .faq_txt > p > a {
     color: #333;

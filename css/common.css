@@ -60,14 +60,16 @@ header{
   bottom:0px; right:0px;
 }
 .h_bottom .gnb{
-  width:527px;
+  width:1020px;
   margin:0px auto;
+  position:relative;
 }
 .h_bottom .gnb > ul{
   display:flex;
   justify-content: flex-end;
+  width:530px;
   position:absolute;
-  right:240px;
+  right: 0px;
 }
 
 .h_bottom .gnb > ul > li{
@@ -85,7 +87,7 @@ header{
 }
 
 /* 서브메뉴서식 */
-.gnb:hover .sub{display: block;}
+.gnb > ul:hover .sub{display: block;}
 
 .sub{
   position:absolute;
@@ -158,6 +160,13 @@ footer > address{
 
 /* 태블릿 */
 @media screen and (min-width:768px) and (max-width:1024px) {
+  header{
+    z-index: 100;
+    background:#0A2647;
+    height: 70px;width: 100%;
+    position:fixed;
+    top:0px;
+  }
   i.fa-bars, .sub_btn, .close_btn{display: none;}
   /* 헤더영역 서식 */
   .h_top{
@@ -196,10 +205,14 @@ footer > address{
 .h_bottom .gnb{
   width:49rem;
   margin:0px auto;
+  position:relative;
 }
 .h_bottom .gnb > ul{
   display:flex;
   justify-content: flex-end;
+  width:33rem;
+  position: absolute;
+  right: 0px;
 }
 .h_bottom .gnb > ul > li{
   text-align:center;
@@ -212,7 +225,7 @@ footer > address{
   font-weight: normal;
 }
 /* 서브메뉴서식 */
-.gnb:hover .sub{display: block;}
+.gnb > ul:hover .sub{display: block;}
 .sub{
   position:absolute;
   left: 0px; top:2.1875rem;
@@ -288,9 +301,11 @@ footer > address{
 /* 모바일버전  */
 @media screen and (max-width:767px) {
   header{
+    z-index: 200;
     background:#0A2647;
-    height: 50px;;
-    position:relative;
+    height: 50px;width: 100%;
+    position:fixed;
+    top:0px;
   }
   label[for=toggle]{display: block;}
   
@@ -298,9 +313,10 @@ footer > address{
     width:2rem;
     color:#fff;
     font-size: 2rem;
-    position: absolute;
+    position: fixed;
     right:2rem;top: 0.6rem;
     cursor: pointer;
+
   }
   .h_top > h1 {
     position: absolute;
@@ -315,7 +331,7 @@ footer > address{
     position: absolute;
     right:50px;top:10px;
     cursor: pointer;
-    z-index: 20;
+    z-index: 300;
   }
   .close_btn img{width:35px;}
     /* 3:7비율 */
@@ -324,18 +340,18 @@ footer > address{
   .h_bottom, .gnb, .lnb{display: none;}
   .h_bottom{
     background: rgba(0,0,0,.5);
-    width:100%; height: 100%;
+    width:70%; height: 100%;
     position:fixed;
     right:0px;top:0px;
     transition: 0.5s;
-    z-index: 20;
-  } 
-  .gnb{
+    } 
+    .gnb{
     position:absolute;
     top:0px;right:0px;
-    width:70%;height: 100%;
+    width:100%;height: 100%;
     background: rgba(0, 0, 0, .9);
     padding-top:50px;
+    z-index: 55;
   }
   .gnb ul li{
     padding: 0px 15px;
@@ -357,10 +373,10 @@ footer > address{
   }
   .gnb > ul > li .sub_btn img{width:100%;}
   .lnb{
-    position:fixed;
-    top:390px;right:0px;
+    position: fixed;
+    top:25rem;right:0px;
     width:70%;height:20%;
-    z-index: 21;
+    z-index: 1;
   }
   .lnb ul li{
     height: 50%;width:40%;
@@ -372,12 +388,12 @@ footer > address{
     display: block;
   }
   .lnb > ul > li:first-child > a::after{display: none;}
-  .lnb > ul > li:last-child{transform: translateY(-114px);}
+  .lnb > ul > li:last-child{transform: translateY(-113px);}
   .sub{
-    background: rgba(0, 0, 0);
-    position: absolute;
     width:100%;
-    z-index: 25;
+    z-index: 55;
+    position:relative;
+
   }
   /* ---푸터영역서식 ------------*/
   footer{
@@ -395,7 +411,7 @@ footer > address{
   }
   footer > dl{
     width: 19.6rem;
-    height:15.5rem;
+    height:15.8rem;
     display:block;
     margin:0 auto;
   }
@@ -416,11 +432,11 @@ footer > address{
   }
   footer > address{
     margin: 0px auto;
-    width:19.6rem;
+    width:20rem;
     font-style: normal;
     text-align: center;
     border-top: solid 1px #fff;
-    line-height: 1.7rem;
+    line-height: 1.625rem;
     font-size: 0.625rem;
   }
   /* .f_last:first-of-type > a::after {
