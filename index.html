@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>월트 디즈니 코리아에 오신것을 환영합니다.</title>
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <title>월트 디즈니 코리아에 오신것을 환영합니다.</title>
   <link rel="stylesheet" href="./css/base.css" type="text/css">
   <link rel="stylesheet" href="./css/common.css" type="text/css">
   <link rel="stylesheet" href="./css/main.css" type="text/css">
@@ -109,7 +109,8 @@
   <!-- 메인영역 -->
     <article class="main-video">
       <h2>메인영상</h2>
-      <video controls  autoplay loop="infinite" muted> 
+      <!-- controls 제거 muted로 음소거 infinite -> loop -->
+      <video autoplay loop="loop" muted> 
         <source src="./main_video.mp4" type="video/mp4">
       </video> 
       <p>
@@ -127,7 +128,7 @@
           와 함께하는 1주년 이벤트!
           </h2>
         </div>
-        <iframe src="https://www.youtube.com/embed/9XPwaO_cGj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        <iframe src="https://www.youtube.com/embed/9XPwaO_cGj0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
         </iframe>
 
         <ul class="e_txt">

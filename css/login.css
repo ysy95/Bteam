@@ -286,7 +286,7 @@
     }
   
     .int_area input,.btn_area button{
-      width:314px;
+      width:250px;
       height:50px;
       /* margin:0px auto; */
     }
@@ -303,6 +303,7 @@
       font-weight:bold;
       /* margin-left:0px; */
       cursor:pointer;
+      width: 255px;
       
     }
   
@@ -328,24 +329,25 @@
     margin-top:5px;
     margin-bottom: 50px;
     /* margin-left:65px; */
-    font-size:14px;}
+    font-size:0.85rem;}
   
     .caption a{
     color:#000;
     /* font-size: 13px; */
     }
     .find{
-    margin-left:105px;
+    margin-left:3rem;
     }
     .line{
-    width:80%;
+    width:75%;
     /* background-color: aqua; */
     border-top:1px solid #000;
     margin-left:-5%;
     }
     .signin{
-    margin-left:30px;
+    margin-left:15px;
     margin-top:10px;
+    font-size: 1rem;
     }
   
     .signin a{

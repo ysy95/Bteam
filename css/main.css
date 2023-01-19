@@ -487,7 +487,7 @@ a[title="맨위로올라가기"] img{
   }
   .event > .e_wrap > iframe{
     margin-top: 1.25rem;
-    width:100%;height: 24rem;
+    width:100%;height:29rem;
     border: #fff solid 4px;
     /* width="560" height="315"  */
   }
@@ -850,13 +850,18 @@ a[title="맨위로올라가기"] img{
   .e_wrap > ul{
     width:100%;
     font-size: 0.9rem;
-    margin-top: 1.875rem;
     border-radius: 15px;
     line-height: 1.875rem;
     background: #fff;
     padding:1.3rem 5px 1rem 0px;
+    position:relative;
+    margin:1.875rem auto 0px auto;
   }
-  .e_wrap > .e_txt > li{width: 80%; margin-left:10%;}
+  .e_wrap > .e_txt > li{
+    width: 80%; 
+    margin-left:10%;
+    position: relative;
+  }
   .e_wrap > .e_txt > li:nth-of-type(4){
     transform: translateY(-0.9rem);
   }
@@ -871,7 +876,7 @@ a[title="맨위로올라가기"] img{
   }
   .e_wrap > .e_txt >li:last-child img{
     position: absolute;
-    right: 1.2rem;bottom:0rem;
+    right: 0rem;bottom:0rem;
     width:4.9rem;
   }
   .e_wrap > .e_txt > li:last-child > a{
@@ -882,11 +887,11 @@ a[title="맨위로올라가기"] img{
     background:#2343D1;
     font-weight: 400;
     font-size: 0.875rem;
-    margin:0 auto;
     line-height: 2.1875rem;
     display: block;
     position: absolute;
     bottom:0.5rem;
+    left: 10%;
   }
   
   /* ------- 채널영역 서식 ------*/
