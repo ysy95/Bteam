@@ -44,21 +44,40 @@ article, section{
   width:100%;
   vertical-align: top;
 }
-
+a[title="맨위로올라가기"]{
+  position: fixed;
+  bottom:20px;right:35px;
+  width:50px;
+  z-index: 5;
+}
+a[title="맨위로올라가기"] img{
+  width: 100%;
+}
 @media screen and (min-width:1025px) {
-
+  header{
+    background: rgba(0, 0, 0, 0)!important;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+  }
+  header:hover{
+    background: #0a2647 !important;
+    transition: 0.4s;
+  }
   .main-video {
     width:100%;
     position: relative;
+    height: 880px;
   }
   .main-video > video{
     width:100%;
+    z-index: 6;
   }
   .main-video > p {
     position: absolute;
-    left: 48%; bottom:20px;
-    width:70px;
-    height: 70px;
+    left: 49%; bottom:70px;
+    width:50px;
+    height: 50px;
     border-radius: 50%;
     border: solid 3px #fff;
   }
@@ -66,12 +85,13 @@ article, section{
     position: absolute;
     left: 32%;bottom: 0px;
     animation:bounce 2s infinite;
-    line-height: 70px;
+    line-height: 50px;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   /* 이벤트서식 */
   .event{
+    background: rgb(255, 255, 255);
     position: relative;
     background-image: url('../main_img/event-bg.png');
     background-size: cover;
@@ -150,7 +170,7 @@ article, section{
   }
   .ch_wrap > h2{
     font-size:2.6rem;
-    border-bottom: solid 2px #333;
+    border-bottom: solid 3px #333;
     padding:15px 0px;
   }
   .ch_wrap > p{
@@ -170,7 +190,6 @@ article, section{
     padding:20px;
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(3,190px);
-    /* animation: fadeIn 1s ease-out; */
   }
   .ch_wrap a{
     /* margin: 40px 40px 0px 0px; */
@@ -193,18 +212,32 @@ article, section{
   }
 
   /* 디즈니 플러스 관련 정보 */
-  .disney_films{}
+  .disney_films{
+    position:relative;
+  }
   .disney_films > h2{
     width: 1040px;
     margin:80px auto 40px auto;
     font-size:2.6rem;
-    border-bottom: solid 2px #333;
+    border-bottom: solid 3px #333;
     padding:15px 0px;
   }
-  .disney_films > ul > li > a:hover{
-    /* transform: scale(1.02); */
+  .disney_films > ul > li {position:relative;}
+  .disney_films > ul > li:hover + .film_txt{
+    transform: scale(1.02);
     transition: 1s ease-out;
     filter:contrast(30%);
+    opacity: 1;
+  }
+  .disney_films > ul > li > .film_txt{
+    position:absolute;
+    left:30%; top:25%;
+    line-height: 60px;
+    color:#fff;
+    margin:0 auto;
+    font-size: 30px;
+    opacity: 0;
+
   }
 
   /* 회사 정보 영역 서식 */
@@ -213,7 +246,7 @@ article, section{
     width: 1040px;
     margin:50px auto 0px auto;
     font-size:2.6rem;
-    border-bottom: solid 2px #333;
+    border-bottom: solid 3px #333;
     padding:15px 0px;
   }
   .com_wrap{
@@ -239,7 +272,7 @@ article, section{
   }
   .b_wrap > h2{
     font-size:2.6rem;
-    border-bottom: solid 2px #333;
+    border-bottom: solid 3px #333;
     padding:15px 0px;
   }
   .b_wrap > p{
@@ -287,6 +320,18 @@ article, section{
     border-bottom: solid 2px #333;
     padding:15px 0px;
     display: flex;
+    position:relative;
+
+  }
+  .n_wrap > h2 > a{
+    border: solid 3px #333;
+    border-radius: 50px;
+    color:#333;
+    font-size: 20px;
+    font-weight: 500;
+    padding:3px 15px 3px 20px;
+    position:absolute;
+    right:13px; bottom:20px;
   }
   .n_wrap > .news_con{
     margin:40px 0px 100px 0px;
@@ -373,7 +418,7 @@ article, section{
   }
   .main-video > p {
     position: absolute;
-    left: 45%; bottom:20px;
+    left: 45%; bottom:80px;
     width:70px;
     height: 70px;
     border-radius: 50%;
@@ -505,9 +550,7 @@ article, section{
     width:15.625rem; height: 3.125rem;
   }
   /* 디즈니 플러스 관련 정보 */
-  .disney_films{
-    
-  }
+  .disney_films{position: relative;}
   .disney_films > h2{
     width: 49rem;
     margin:5rem auto 2.5rem auto;
@@ -515,12 +558,18 @@ article, section{
     border-bottom: solid 2px #333;
     padding:0.9375rem 0px;
   }
-  .disney_films > ul > li > a{
-    /* transform: scale(1.02); */
-    transition: 1s ease-out;
-    
-  }
 
+
+  .disney_films > ul > li {position: relative;}
+  .disney_films > ul > li > .film_txt{
+    position:absolute;
+    left:20%; top:23%;
+    color:#fff;
+    width:80%;
+    font-size: 1.5rem;
+
+
+  }
   /* 회사 정보 영역 서식 */
   .company{
   
@@ -605,6 +654,18 @@ article, section{
     border-bottom: solid 2px #333;
     padding:15px 0px;
     display: flex;
+    position:relative;
+  }
+  
+  .n_wrap > h2 > a{
+    border: solid 2px #333;
+    border-radius: 50px;
+    color:#333;
+    font-size: 1rem;
+    font-weight: 500;
+    padding:3px 15px 3px 20px;
+    position:absolute;
+    right:13px; bottom:20px;
   }
   .n_wrap > .news_con{
     margin:2.5rem 0px 6.25rem 0px;
@@ -618,9 +679,9 @@ article, section{
   .n_wrap > .news_con img{width: 100%;}
   .n_wrap > .news_con li p > a{
     font-weight: 600;
-    text-overflow: ellipsis;
     color: #333;
   }
+  .n_wrap > .news_con p:first-child a{margin-bottom:2rem;}
   .n_wrap > .news_con p:last-child{margin-top: 1.25rem;}
   .n_wrap > .news_con li > .n_txt a{
     color:#4D92E3;
@@ -687,12 +748,11 @@ article, section{
     position: relative;
   }
   .main-video > video{
-    width:160%;
-    transform: translateX(-20%);
+    width:100%;
   }
   .main-video > p {
     position: absolute;
-    left: 44%; bottom:20px;
+    left: 43%; bottom:35px;
     width:3.125rem;
     height:3.125rem;
     border-radius: 50%;
@@ -700,7 +760,7 @@ article, section{
   }
   i.fa-arrow-down{
     position: absolute;
-    left: 30%;bottom: 0px;
+    left: 28%;bottom: 0px;
     animation:bounce 2s infinite;
     line-height: 3.125rem;
     color: #fff;
@@ -721,8 +781,8 @@ article, section{
   }
   .title01 > img{width:6.125rem;}
   .event > .e_wrap{
-    width:19.8rem;
-    margin:0 auto;
+    width:80%;
+    margin:0 2.5rem;
     padding:3.125rem 0rem;
   }
   
@@ -730,24 +790,24 @@ article, section{
     color:#fff;
     transform: translateY(1.4rem);
     font-size: 1.2rem;
-    margin-left:0.5rem;
+    margin-left:0.4rem;
     font-weight: 500;
   }
   .event > .e_wrap > iframe{
     margin-top: 1.25rem;
-    width:100%;height: 11.5rem;
+    width:100%;height: 12rem;
     border: #fff solid 3px;
   }
   .e_wrap > ul{
     width:100%;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     margin-top: 1.875rem;
     border-radius: 15px;
     line-height: 1.875rem;
     background: #fff;
-    padding:1.3rem 0px 1.875rem 0px;
+    padding:1.3rem 5px 1rem 0px;
   }
-  .e_wrap > .e_txt > li{width: 18rem; margin-left:1.2rem;}
+  .e_wrap > .e_txt > li{width: 80%; margin-left:10%;}
   .e_wrap > .e_txt > li:nth-of-type(4){
     transform: translateY(-0.9rem);
   }
@@ -756,38 +816,39 @@ article, section{
     transform: translateY(-1.9rem);
   }
   .e_wrap > .e_txt >li:last-child{
-    margin: 1.5rem 1.7rem;
+    margin: 12% 19%;
     position: relative;
+    width:300px;
   }
   .e_wrap > .e_txt >li:last-child img{
     position: absolute;
-    right: 2.5rem;bottom:-0.5rem;
+    left: 8.7rem;bottom:-0.5rem;
     width:4.9rem;
   }
   .e_wrap > .e_txt > li:last-child > a{
     border-radius: 15px;
-    box-shadow: 1px 1px 3px #555;
+    box-shadow: 1px 2px 2px #555;
     padding:0.5rem 3.75rem; 
-    margin-left: 15%;
+    justify-content: center;
     background:#2343D1;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.875rem;
+    margin-left: 3%;
   }
   
   /* ------- 채널영역 서식 ------*/
   .ch_wrap{
-    width: 20rem;
-    margin:0 auto;
+    width: 80%;
+    margin:0 2.5rem;
   }
   .ch_wrap > h2{
     font-size:1.25rem;
     border-bottom: solid 3px #333;
-    box-shadow: 0px 2px 0px #ccc;
     padding:0.9375rem 0px;
   }
   .ch_wrap > p{
     padding:1.25rem 0rem;
-    width:19.5rem;
+    width:99%;
     font-size: 0.875rem;
     text-align: justify;
     font-weight: 500;
@@ -797,12 +858,14 @@ article, section{
     background: #333;
     display: grid;
     width:100%;
-    grid-gap: 0.625rem;
+    grid-gap: 10px;
     box-sizing: border-box;
     padding:0.625rem;
+    margin:0 auto;
     grid-template-columns: repeat(2,auto);
-    grid-template-rows: repeat(4,8.4rem);
+    grid-template-rows: repeat(4,8rem);
   }
+  .ch_wrap > .ch_gallery li:last-child{display: none;}
   .ch_wrap a{
     /* margin: 40px 40px 0px 0px; */
     background:#2343D1;
@@ -812,51 +875,61 @@ article, section{
     line-height: 2.2rem;
     font-size: 1rem;
     font-weight: 400;
-    margin:1.6rem 0 0 5.7rem;
+    margin:1.6rem 0 0 32%;
     display: block;
-    width:8.5rem; height: 2.2rem;
+    width:8rem; height: 2.2rem;
   }
+
+
   /* 디즈니 플러스 관련 정보 */
   .disney_films{
+    position:relative;
     
   }
   .disney_films > h2{
-    width: 19.6rem;
+    width: 80%;
     margin:5rem auto 2.5rem auto;
     font-size:1.25rem;
     border-bottom: solid 3px #333;
-    box-shadow: 0px 2px 0px #ccc;
     padding:0.9375rem 0rem;
 
   }
-  .disney_films > ul > li > a{
-    /* transform: scale(1.02); */
-    transition: 1s ease-out;
-    
+  .disney_films > ul > li {position: relative;}
+  .disney_films > ul > li > .film_txt{
+    position:absolute;
+    left:20%; top:18%;
+    color:#fff;
+    width:80%;
+
+
   }
+
 
   /* 회사 정보 영역 서식 */
   .company{
   
   }
   .company > h2{
-    width: 19.6rem;
+    width: 80%;
     margin:5rem auto 0px auto;
     font-size:1.25rem;
     border-bottom: solid 2px #333;
     padding:0.9375rem 0px;
-    box-shadow: 0px 2px 0px #ccc;
   }
   .com_wrap{
-    width: 19.6rem;
+    position:relative;
+    width: 78%;
     margin:2rem auto 3.75rem auto ;
   }
   .com_wrap img{
+    position: relative;
+    left:20%;
     width:11.5rem;
     height: 6.25rem;
-    margin: 0 auto;
+    margin: 5% auto;
   }
   .com_wrap p{
+    position:relative;
     text-align: justify;
     line-height: 2rem;
     font-size: 0.875rem;
@@ -866,20 +939,18 @@ article, section{
 
   /* 파트너사 브랜드 영역 서식 */
   .b_wrap{
-    width: 19.6rem;
+    width: 80%;
     margin:0 auto;
   }
   .b_wrap > h2{
-    width: 19.6rem;
+    width: 100%;
     margin:5rem auto 0px auto;
     font-size:1.25rem;
     border-bottom: solid 2px #333;
     padding:0.9375rem 0px;
-    box-shadow: 0px 3px 0px #ccc;
   }
   .b_wrap > p{
-    padding:1.25rem;
-    margin: 0 auto;
+    margin: 0.825rem auto;
     line-height: 2rem;
     font-size: 0.875rem;
     text-align: justify;
@@ -888,7 +959,7 @@ article, section{
   .b_wrap > .b_gallery{
     display: grid;
     background-image: url('../main_img/m_brand_bg.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     grid-gap: 0.5rem;
     box-sizing: border-box;
@@ -898,25 +969,25 @@ article, section{
   }
   .b_gallery > .brand{
     overflow: hidden;
-    transform: translateY(8%);
     position: relative;
   }
-  .b_gallery .brand img{width:65%;}
-  .b_gallery > .brand:first-child img{padding:1.25rem 0px 0px 3.75rem;}
-  .b_gallery > .brand:nth-child(2) img{padding:50px 0px 0px 1.875rem;}
-  .b_gallery > .brand:nth-child(3) img{padding:5px 0px 0px 15px;}
-  .b_gallery > .brand:nth-child(4) img{padding:1.25rem 0px 0px 3.75rem;}
-  .b_gallery > .brand:nth-child(5) img{padding:13px 0px 0px 1.875rem;}
-  .b_gallery > .brand:last-child img{padding:0px 0px 12px 40px;width:52%;}
+  .b_gallery .brand img{width:75%;}
+  .b_gallery > .brand:first-child img{padding:1.25rem 0px 0px 1.4rem;}
+  .b_gallery > .brand:nth-child(2) img{padding:30px 5px 0px 1.3rem;}
+  .b_gallery > .brand:nth-child(3) img{padding:-5px 0px 0px 1.5rem;}
+  .b_gallery > .brand:nth-child(4) img{padding:1.1rem 0px 0px 1.6rem;}
+  .b_gallery > .brand:nth-child(5) img{padding:12px 0px 0px 1.4rem;}
+  .b_gallery > .brand:last-child img{padding:0px 0px 12px 2.3rem;width:55%;}
 
   /* 새로운소식 */
   .news{}
   .news > .n_wrap{
-    width: 19.6rem;
+    width: 75%;
     margin: 0 auto;
+    position: relative;
   }
   .n_wrap > h2{
-    width: 19.6rem;
+    width: 100%;
     margin:5rem auto 0px auto;
     font-size:1.25rem;
     border-bottom: solid 2px #333;
@@ -925,8 +996,13 @@ article, section{
   }
   .n_wrap > .news_con{
     margin:2.5rem 0px 6.25rem 0px;
+    position: relative;
   }
   .n_wrap > .news_con img{width: 100%;}
+  .n_wrap > .news_con li{
+    margin-bottom: 30px;
+  }
+  .n_wrap > .news_con > li:nth-of-type(3){display: none;}
   .n_wrap > .news_con li p > a{
     font-weight: 500;
     color: #333;
@@ -948,19 +1024,27 @@ article, section{
     box-shadow: 0.7px 1.5px 1px #666;
 
   }
+  .n_wrap > .news_con > a{
+    border: solid 2px #333;
+    border-radius: 50px;
+    color:#333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding:3px 15px 3px 20px;
 
-
+  }
 
   /* 문의사항 */
   .faq{
+    position: relative;
   }
   
   .faq > .faq_wrap{
     position:relative;
     justify-content:center;
-    margin: 0 auto;
-    width:19.5rem;
-    height: 15rem;
+    margin: 15% auto;
+    width:80%;
+    height: 21rem;
     border-radius: 20px;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
       linear-gradient(0deg, rgba(50, 226, 184, 0.27), rgba(50, 226, 184, 0.27)), 
@@ -971,31 +1055,38 @@ article, section{
   }
   .faq_wrap > .faq_txt{
     margin:auto 0;
-    width:16.5rem;
+    width:80%;
   }
   .faq_wrap h2{
+    position:absolute;
+    top:50%; left:5%;
     color:#fff;
-    font-size: 1.25rem;
-    margin-bottom: 1.25rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .faq_wrap h2 > a{display: none;}
+  .faq_wrap > .faq_txt > p{
+    margin:0 auto;
+    position: absolute;
+    bottom:13%;left:22%;
+    width:80%;
   }
   .faq_wrap > .faq_txt > p > a {
     color: #333;
+    width:100%;
     background: #fff;
     border-radius: 15px;
     box-shadow: 1px 1px 2px #555;
     padding:0.5rem 0.9rem;
     font-size: 0.825rem;
-    transform: translateY(10rem);
+    margin-right: 5%;
+
   } 
   .faq_wrap img{
-    transform:translateY(10%);
-    width:11.625rem;
+    width:12rem;
     position: absolute;
-    top:2rem;
-
+    top: 22px;left: 19%;
   }
-
 
 
 }
