@@ -24,7 +24,8 @@ footer > dl dt{ display: none;}
     background:#0A2647;
     height:70px;width: 100%;
     position:fixed;
-    top:0px;
+    top:0px; 
+    z-index: 100;
   }
   i.fa-bars, .sub_btn, .close_btn{display: none;}
   .h_top{
@@ -125,6 +126,8 @@ footer{
   color:#fff;
   font-size: 12px;
   box-sizing: border-box;
+  position:relative;
+  bottom: 0px;
 }
 
 footer dl > .f_logo img{
@@ -261,6 +264,8 @@ footer{
   height: 150px;
   color:#fff;
   font-size: 75%;
+  position:relative;
+  bottom: 0px;
 
 }
 footer > dl dt{
@@ -406,6 +411,8 @@ footer > address{
     height: 280px;
     color:#fff;
     font-size: 0.75rem;
+    position:relative;
+    bottom: 0px;
   }
   footer dl > .f_logo img{
     width: 6.8rem;
