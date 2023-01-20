@@ -10,6 +10,7 @@
   
   /* article 서식 1 */
   article{margin-top: 80px !important; }
+  .article01{margin-top: 140px !important;}
   .article01{margin:0px auto;width: 864px; height: 274px;}
   .article01 h2,.article02 h2,.article03 h2{
     font-size: 32px;

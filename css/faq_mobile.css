@@ -8,6 +8,7 @@
   /* article 1 서식 */
   
   article{margin-top: 40px !important; }
+  .article01{margin-top: 80px !important; }
   .article01{margin:0px auto;width: 313px; height: 355px;}
   .article01 h2,.article02 h2,.article03 h2{
     font-size: 32px;
