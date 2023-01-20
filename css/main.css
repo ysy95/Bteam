@@ -66,7 +66,7 @@ a[title="맨위로올라가기"] img{
 @media screen and (min-width:1025px) {
   header{
     background: rgba(0, 0, 0, 0)!important;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     width: 100%;
   }
@@ -1119,6 +1119,7 @@ a[title="맨위로올라가기"] img{
   /* 문의사항 */
   .faq{
     position: relative;
+    width:100%;
   }
   
   .faq > .faq_wrap{
@@ -1150,7 +1151,7 @@ a[title="맨위로올라가기"] img{
   .faq_wrap > .faq_txt > p{
     margin:0 auto;
     position: absolute;
-    bottom:13%;left:22%;
+    bottom:13%;left:23%;
     width:75%;
   }
   .faq_wrap > .faq_txt > p > a {

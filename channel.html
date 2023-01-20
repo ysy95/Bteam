@@ -5,181 +5,156 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Walt Disney Korea - main</title>
-<<<<<<< HEAD
-  <!-- 공동서식 -->
-  <!-- 초기화 -->
-  <link rel="stylesheet" href="./css/reset.css" type="text/css">
-  <!--기본서식,글꼴,색상,링크 -->
-  <link rel="stylesheet" href="./css/base.css" type="text/css">
-  
-=======
   <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-  
-  <!-- 초기화 -->
-  <link rel="stylesheet" href="./css/reset.css" type="text/css">
-      <!--기본서식,글꼴,색상,링크 -->
-      <link rel="stylesheet" href="./css/base.css" type="text/css">
-      
->>>>>>> ccea41215726a18108ca50a2fc9ab957907615ae
   <link rel="stylesheet" href="./css/base.css" type="text/css">
   <link rel="stylesheet" href="./css/common.css" type="text/css">
-  <!-- 채널서식 -->
   <link rel="stylesheet" href="./css/channel.css">
+  <link rel="stylesheet" href="./css/channel_tablet.css">
+  <link rel="stylesheet" href="./css/channel_mobile.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
- <link rel="stylesheet" href="./css/channel_mobile.css">
-
-
-  <!-- 자바스크립트 -->
+  <!-- <link rel="stylesheet" href="./css/main.css" type="text/css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="./script/script.js" ></script>
   <script src="./script/main.js" ></script>
   <script src="./script/prefixfree.min.js"></script>
   <script src="./script/channel.js" ></script>
 </head>
-
-
 <body>
-  <form action="" method="post" name="q">
+  <form action="#" method="post" name="q">
   <!-- 헤더영역 -->
   <header>
-  <input type="checkbox" id="toggle">
-  <!-- 헤더영역 -->
-    <header>
-      <div class="h_top">
-        <h1>
-          <a href="index.html" title="메인페이지로 바로가기">
-            <img src="./img/main_logo.png" alt="상단로고">
+    <div class="h_top">
+      <h1>
+        <a href="index.html" title="메인페이지로 바로가기">
+          <img src="./img/main_logo.png" alt="상단로고">
+        </a>
+      </h1>
+      <nav class="lnb">
+        <ul>
+          <li><a href="login.html" title="로그인">로그인</a></li>
+          <li><a href="signin.html" title="회원가입">회원가입</a></li>
+          <li><a href="https://www.disneyplus.com/ko-kr" title="디즈니 플러스 바로가기">Disney+</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <label for="toggle" class="total_btn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <div class="h_bottom">
+      <nav class="gnb">
+        <label for="toggle" class="close_btn">
+          <img src="./main_img/close.png" alt="닫기">
+        </label>
+        <ul>
+          <li><a href="about.html" title="회사소개">About
           </a>
-        </h1>
-        <nav class="lnb">
-          <ul>
-            <li><a href="login.html" title="로그인">로그인</a></li>
-            <li><a href="signin.html" title="회원가입">회원가입</a></li>
-            <li><a href="https://www.disneyplus.com/ko-kr" title="디즈니 플러스 바로가기">Disney+</a></li>
-          </ul>
-        </nav>
-      </div>
-      
-      <label for="toggle" class="total_btn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <div class="h_bottom">
-        <nav class="gnb">
-          <label for="toggle" class="close_btn">
-            <i class="fa-light fa-xmark"></i>
-          </label>
-          <ul>
-            <li><a href="about.html" title="회사소개">About
-                <i class="fa-solid fa-chevron-down"></i>
+          <img class="sub_btn" src="./main_img/arrow_down.png" alt="서브메뉴보기">
+            <ul class="sub">
+              <li><a href="#none" title="회사소개">회사소개</a></li>
+            <li><a href="#none" title="회사연혁">회사연혁</a></li>
+            <li><a href="#none" title="파트너사">파트너사</a></li>
+            <li><a href="#none" title="Contact us">Contact us</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="careers" title="채용정보">Careers
             </a>
+            <img class="sub_btn" src="./main_img/arrow_down.png" alt="서브메뉴보기">
+            
+            <ul class="sub">
+              <li><a href="#none" title="인재상">인재상</a></li>
+            <li><a href="#none" title="채용정보">채용정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="channel.html" title="채널">Channel
+            </a>
+            <img class="sub_btn" src="./main_img/arrow_down.png" alt="서브메뉴보기">
+            <ul class="sub">
+              <li><a href="channel.html" title="디즈니">Disney</a></li>
+              <li><a href="channel.html" title="픽사">Pixar</a></li>
+              <li><a href="channel.html" title="마블">Marvel</a></li>
+              <li><a href="channel.html" title="스타워즈">Star Wars</a></li>
+              <li><a href="channel.html" title="네이셔널 지오그래픽">National Geographic </a></li>
+              <li><a href="channel.html" title="20세기 스튜디오">20th Century Studios</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="news.html" title="새로운소식">News
+            </a>
+            <img class="sub_btn" src="./main_img/arrow_down.png" alt="서브메뉴보기">
+            <ul class="sub">
+              <li><a href="news.html" title="새로운소식">News</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="faq.html" title="문의사항">FAQ
+            </a> 
+            <img class="sub_btn" src="./main_img/arrow_down.png" alt="서브메뉴보기">
               <ul class="sub">
-                <li><a href="#none" title="회사소개">회사소개</a></li>
-              <li><a href="#none" title="회사연혁">회사연혁</a></li>
-              <li><a href="#none" title="파트너사">파트너사</a></li>
-              <li><a href="#none" title="Contact us">Contact us</a></li>
+                <li><a href="#none" title="1대1 문의하기">1:1 문의하기</a></li>
+                <li><a href="#none" title="1대1 답변확인">1:1 답변확인</a></li>
+                <li><a href="#none" title="디즈니플러스 시청">디즈니&#43; 시청</a></li>
+                <li><a href="#none" title="디즈니플러스 문제해결">디즈니&#43; 문제해결</a></li>
+                <li><a href="#none" title="계정과 결제">계정 &amp; 결제</a></li>
               </ul>
-            </li>
-            <li>
-              <a href="careers" title="채용정보">Careers
-                <i class="fa-solid fa-chevron-down"></i>
-              </a>
-              
-              <ul class="sub">
-                <li><a href="#none" title="인재상">인재상</a></li>
-              <li><a href="#none" title="채용정보">채용정보</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="channel.html" title="채널">Channel
-                <i class="fa-solid fa-chevron-down"></i>
-              </a>
-              <ul class="sub">
-                <li><a href="channel.html" title="디즈니">Disney</a></li>
-                <li><a href="channel.html" title="픽사">Pixar</a></li>
-                <li><a href="channel.html" title="마블">Marvel</a></li>
-                <li><a href="channel.html" title="스타워즈">Star Wars</a></li>
-                <li><a href="channel.html" title="네이셔널 지오그래픽">National Geographic </a></li>
-                <li><a href="channel.html" title="20세기 스튜디오">20th Century Studios</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="news.html" title="새로운소식">News
-                <i class="fa-solid fa-chevron-down"></i>
-              </a>
-              <ul class="sub">
-                <li><a href="news.html" title="새로운소식">News</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="faq.html" title="문의사항">FAQ
-                <i class="fa-solid fa-chevron-down"></i>
-              </a> 
-                <ul class="sub">
-                  <li><a href="#none" title="1대1 문의하기">1:1 문의하기</a></li>
-                  <li><a href="#none" title="1대1 답변확인">1:1 답변확인</a></li>
-                  <li><a href="#none" title="디즈니플러스 시청">디즈니&#43; 시청</a></li>
-                  <li><a href="#none" title="디즈니플러스 문제해결">디즈니&#43; 문제해결</a></li>
-                  <li><a href="#none" title="계정과 결제">계정 &amp; 결제</a></li>
-                </ul>
-            </li>
-          </ul>
-        </nav> 
-      </div>
-    </header>
+          </li>
+        </ul>
+      </nav> 
+    </div>
+  </header>
 
-
-  <!-- 메인영역 -->
     <!-- 디즈니 상단 -->
   <article class="d1_top">
     <div id="d_wrap">
       <div class="asd">
-        <img src="./channel-img/1.disney/123456.png" alt="">
-         <h1><img src="./channel-img/1.disney/D_h1.png" alt=""></h1>
+        <img src="./channel-img/1.disney/123456.png" alt="디즈니 백그라운드">
+         <h2><img src="./channel-img/1.disney/disneylogo.png" alt="디즈니 로고"></h2>
       
       
           <ul class="sns">
             <li>
-              <a href="https://www.facebook.com/DisneyKorea">
+              <a href="https://www.facebook.com/DisneyKorea" title="페이스북">
                 <img src="./channel-img/icon/facebook.png" alt="페이스북 아이콘">
               </a>
            </li>
 
             <li>
-              <a href="https://www.instagram.com/disneykorea/">
+              <a href="https://www.instagram.com/disneykorea/" title="인스타">
               <img src="./channel-img/icon/instagram.png" alt="인스타 아이콘">
               </a>
             </li>
 
             <li>
-              <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+              <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ" title="유튜브">
               <img src="./channel-img/icon/youtube.png" alt="유튜브 아이콘">
               </a>
             </li>
         </ul>
-  </div>
-
+      </div>
     </div>
 <!-- 픽사 -->
     <div  id="p_wrap">
       <div class="asd">
-        <img src="./channel-img/2.pixar/p.background1.jpg" alt="">
-        <h1><img src="./channel-img/2.pixar/P_h1.png" alt=""></h1>
+        <img src="./channel-img/2.pixar/p.background1.jpg" alt="픽사백그라운드">
+        <h2><img src="./channel-img/2.pixar/pixarlogo.png" alt="픽사"></h2>
   
        <ul class="sns">
           <li>
-            <a href="https://www.facebook.com/DisneyKorea">
+            <a href="https://www.facebook.com/Pixar/" title="페북">
               <img src="./channel-img/icon/facebook.png" alt="페이스북 아이콘">
             </a>
           </li>
   
           <li>
-            <a href="https://www.instagram.com/disneykorea/">
+            <a href="https://www.instagram.com/pixar/" title="인스타">
             <img src="./channel-img/icon/instagram.png" alt="인스타 아이콘">
             </a>
           </li>
   
           <li>
-            <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+            <a href="https://www.youtube.com/@pixar" title="유튜브">
             <img src="./channel-img/icon/youtube.png" alt="유튜브 아이콘">
             </a>
           </li>
@@ -189,25 +164,31 @@
 <!-- 마블 -->
       <div  id="m_wrap">
         <div class="asd">
-          <img src="./channel-img/3.marvel/m.background1.jpg" alt="">
-          <h1><img src="./channel-img/3.marvel/M_h1.png" alt=""></h1>
+          <img src="./channel-img/3.marvel/m.background1.jpg" alt="마블">
+          <h2><img src="./channel-img/3.marvel/marvellogo.png" alt="마블"></h2>
     
          <ul class="sns">
             <li>
-              <a href="https://www.facebook.com/DisneyKorea">
+              <a href="https://www.facebook.com/marvel.kr" title="페이스북">
                 <img src="./channel-img/icon/facebook.png" alt="페이스북 아이콘">
               </a>
             </li>
     
             <li>
-              <a href="https://www.instagram.com/disneykorea/">
+              <a href="https://www.instagram.com/marvelkorea/" title="인스타">
               <img src="./channel-img/icon/instagram.png" alt="인스타 아이콘">
               </a>
             </li>
     
             <li>
-              <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+              <a href="https://www.youtube.com/MarvelKorea" title="유튜브">
               <img src="./channel-img/icon/youtube.png" alt="유튜브 아이콘">
+              </a>
+            </li>
+
+            <li>
+              <a href="https://m.post.naver.com/my.nhn?memberNo=15200157" title="블로그">
+              <img src="./channel-img/icon/blog.png" alt="블로그 아이콘">
               </a>
             </li>
           </ul>
@@ -216,31 +197,25 @@
 <!-- 스타워즈 -->
         <div  id="s_wrap">
           <div class="asd">
-            <img src="./channel-img/4.star wars/s.background1.jpg" alt="">
-            <h1><img src="./channel-img/4.star wars/S_h1.png" alt=""></h1>
+            <img src="./channel-img/4.starwars/s.background1.jpg" alt="스타워즈">
+            <h2><img src="./channel-img/4.starwars/starwarslogo.png" alt="스타워즈"></h2>
       
            <ul class="sns">
               <li>
-                <a href="https://www.facebook.com/DisneyKorea">
+                <a href="https://www.facebook.com/StarWars.kr/" title="페이스북">
                   <img src="./channel-img/icon/facebook.png" alt="페이스북 아이콘">
                 </a>
               </li>
       
               <li>
-                <a href="https://www.instagram.com/disneykorea/">
+                <a href="https://www.instagram.com/starwarskorea/" title="인스타">
                 <img src="./channel-img/icon/instagram.png" alt="인스타 아이콘">
                 </a>
               </li>
       
               <li>
-                <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+                <a href="https://www.youtube.com/channel/UCGf-sXt1hwYeqLh9Y6m5obQ" title="유튜브">
                 <img src="./channel-img/icon/youtube.png" alt="유튜브 아이콘">
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
-                <img src="./channel-img/icon/blog.png" alt="블로그 아이콘">
                 </a>
               </li>
             </ul>
@@ -249,30 +224,30 @@
 <!-- 네셔널 -->
           <div  id="n_wrap">
             <div class="asd">
-              <img src="./channel-img/5.national/n.background1.jpg" alt="">
-              <h1><img src="./channel-img/5.national/N_h1.png" alt=""></h1>
+              <img src="./channel-img/5.national/n.background1.jpg" alt="네셔널">
+              <h2><img src="./channel-img/5.national/nationallogo.png" alt="네셔널"></h2>
         
              <ul class="sns">
                 <li>
-                  <a href="https://www.facebook.com/DisneyKorea">
+                  <a href="https://www.facebook.com/NatGeoKorea" title="페이스북"> 
                     <img src="./channel-img/icon/facebook.png" alt="페이스북 아이콘">
                   </a>
                 </li>
         
                 <li>
-                  <a href="https://www.instagram.com/disneykorea/">
+                  <a href="https://www.instagram.com/natgeokorea/" title="인스타">
                   <img src="./channel-img/icon/instagram.png" alt="인스타 아이콘">
                   </a>
                 </li>
         
                 <li>
-                  <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+                  <a href="https://www.youtube.com/user/natgeokorea" title="유튜브">
                   <img src="./channel-img/icon/youtube.png" alt="유튜브 아이콘">
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+                  <a href="https://www.natgeokorea.com/" title="브랜딩사이트">
                   <img src="./channel-img/icon/brandsite.png" alt="브랜딩사이트 아이콘">
                   </a>
                 </li>
@@ -283,36 +258,36 @@
 <!-- 20세기 -->
             <div id="f_wrap">
               <div class="asd">
-                <img src="./channel-img/6.20century/20.background1.jpg" alt="">
-                <h1><img src="./channel-img/6.20century/20_h1.png" alt=""></h1>
+                <img src="./channel-img/6.20century/20.background1.jpg" alt="20세기">
+                <h2><img src="./channel-img/6.20century/20thlogo.png" alt="20세기"></h2>
           
                <ul class="sns">
                   <li>
-                    <a href="https://www.facebook.com/DisneyKorea">
+                    <a href="https://www.facebook.com/20thCenturyStudios.KR" title="페이스북">
                       <img src="./channel-img/icon/facebook.png" alt="페이스북 아이콘">
                     </a>
                   </li>
           
                   <li>
-                    <a href="https://www.instagram.com/disneykorea/">
+                    <a href="https://www.instagram.com/20thcenturystudioskr/" title="인스타">
                     <img src="./channel-img/icon/instagram.png" alt="인스타 아이콘">
                     </a>
                   </li>
           
                   <li>
-                    <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+                    <a href="https://www.youtube.com/20thCenturyStudiosKorea" title="유튜브">
                     <img src="./channel-img/icon/youtube.png" alt="유튜브 아이콘">
                     </a>
                   </li>
 
                   <li>
-                    <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+                    <a href="https://post.naver.com/my.nhn?memberNo=16173321" title="블로그">
                     <img src="./channel-img/icon/blog.png" alt="블로그 아이콘">
                     </a>
                   </li>
 
                   <li>
-                    <a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ">
+                    <a href="https://twitter.com/20thcenturyKR" title="트위터">
                     <img src="./channel-img/icon/twitter.png" alt="트위터 아이콘">
                     </a>
                   </li>
@@ -326,108 +301,99 @@
               </div>
     </article>
     
-    <!-- 채널 파트너스 클릭-->
-    <article id="channel-wrap">
+    <!-- 파트너사 -->
+    <div>
       <ul class="channel">
         <li class="d1">     
-        
-            <img src="./channel-img/1.disney/D_click.png" alt="디즈니 클릭로고">
-      
+            <img src="./channel-img/1.disney/D_click.png" alt="디즈니 클릭로고">  
         </li>
-        
+
         <li class="p1">
-         
-            <img src="./channel-img/2.pixar/p_click.png" >
-         
+            <img src="./channel-img/2.pixar/p_click.png" alt="픽사 클릭로고" >
         </li>
 
         <li class="m1">   
-       
             <img src="./channel-img/3.marvel/m_click.png" alt="마블 클릭로고" >
-      
         </li>
 
         <li class="s1">
-         
-            <img src="./channel-img/4.star wars/s_click.png" alt="스타워즈 클릭로고" >
-        
+            <img src="./channel-img/4.starwars/s_click.png" alt="스타워즈 클릭로고" >
         </li>
 
         <li class="n1">
-       
-            <img src="./channel-img/5.national/n_click.png"  alt = "네셔널 클릭로고" >
-          
+            <img src="./channel-img/5.national/n_click.png"  alt = "네셔널"> 
         </li>
 
         <li class="f1">
-         
             <img src="./channel-img/6.20century/20_click.png" alt="20세기 클릭로고" >
-       
         </li>
       </ul>
-    </article>
+    </div>
 
     <!-- 필름  검색창-->
-  <article class="films">
+  <div class="films">
     <p>Films</p>
      <div>
-      <p><a href="">추천순</a>|</p>
-      <p><a href="">최신순</a>|</p>
-      <p><a href="">평점순</a></p>  
+      <p><a href="#none" title="추천순">추천순</a>|</p>
+      <p><a href="#none" title="최신순">최신순</a>|</p>
+      <p><a href="#none" title="평점순">평점순</a></p>  
     </div>
     
+    <div>
     <div class="search_box">
       <i class=" fas fa-search"></i>
-    <input type="text" class="s_button" name="q">
+      <label for="s_button1" class="s_button1">&nbsp;</label>
+      <input type="text" class="s_button" name="q">
     </div>
-  </article>
+  </div>
+  </div>
 
 
 <!-- <<영화 컨텐츠>>-->
 
 <!-- 디즈니 컨텐츠  -->
-  <!-- <div class="a-content-wrap">   -->
-    <section class="content-wrap" id="d-channel">
-      <article class="wrap">
-        <ul class="movie">
-          <li>
-            <a href="https://www.disneyplus.com/ko-kr/movies/frozen-2/28vdy71kJrjb">
-            <img src="./channel-img/1.disney/d.box1.jpg" alt="겨울왕국">
-            <div class="text">
-             <h2>겨울왕국2 <span class="star">평점 8.95</span></h2>
-              <p>전체관람가</p>
-              <p>애니메이션,모험,코미디,가족</p>
-          </div>
-            </a>
-          </li>
+<div class="a-content-wrap">
+<div  id="d-channel">
+  <article class="wrap">
+    <ul class="movie">
+<li>
+  <a href="https://www.disneyplus.com/ko-kr/movies/frozen-2/28vdy71kJrjb" title="겨울왕국">
+    <img src="./channel-img/1.disney/d.box1.jpg" alt="겨울왕국">
+    <div class="text">
+      <h3>겨울왕국2 <span class="star">평점 8.95</span></h3>
+      <p>전체관람가</p>
+      <p>애니메이션,모험,코미디,가족</p>
+    </div>
+  </a>
+</li>
 
-            <li> 
-              <a href="https://www.disneyplus.com/ko-kr/movies/aladdin/57QdIBthImk6">
-              <img src="./channel-img/1.disney/d.box2.jpg" alt="알라딘">
-              <div class="text">
-              <h2>알라딘 <span class="star">9.41</span></h2>
-              <p>전체관람가</p>
-              <p>모험,가족,판타지,뮤지컬</p>
-              </div>
-              </a>
-            </li>
+<li> 
+  <a href="https://www.disneyplus.com/ko-kr/movies/aladdin/57QdIBthImk6" title="알라딘">
+    <img src="./channel-img/1.disney/d.box2.jpg" alt="알라딘">
+    <div class="text">
+      <h3>알라딘 <span class="star">평점 9.41</span></h3>
+      <p>전체관람가</p>
+      <p>모험,가족,판타지,뮤지컬</p>
+    </div>
+  </a>
+</li>
     
-            <li>
-              <a href="https://www.disneyplus.com/ko-kr/movies/zootopia/1QOxldhm1sKg">
-              <img src="./channel-img/1.disney/d.box3.jpg" alt="주토피아">
-              <div class="text">
-                <h2>주토피아  <span class="star">9.33</span></h2>
-                <p>전체관람가</p>
-                <p>애니메이션,액션,모험,코미디 </p>
-              </div>
-                </a>
-              </li>
+<li>
+  <a href="https://www.disneyplus.com/ko-kr/movies/zootopia/1QOxldhm1sKg" title="주토피아">
+    <img src="./channel-img/1.disney/d.box3.jpg" alt="주토피아">
+    <div class="text">
+      <h3>주토피아  <span class="star">평점 9.33</span></h3>
+      <p>전체관람가</p>
+      <p>애니메이션,액션,모험,코미디 </p>
+    </div>
+   </a>
+</li>
 
-              <li>
-   <a href="https://www.disneyplus.com/ko-kr/movies/the-lion-king/gDBvSe4GpZPD">
+<li>
+   <a href="https://www.disneyplus.com/ko-kr/movies/the-lion-king/gDBvSe4GpZPD" title="라이온킹">
      <img src="./channel-img/1.disney/d.box4.jpg" alt="라이온킹">
      <div class="text">
-      <h2>라이온 킹  <span class="star">8.64</span></h2>
+      <h3>라이온 킹  <span class="star">평점 8.64</span></h3>
       <p>전체관람가</p>
       <p>모험,드라마,가족 </p>
     </div>
@@ -435,10 +401,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/tangled/3V3ALy4SHStq">
+  <a href="https://www.disneyplus.com/ko-kr/movies/tangled/3V3ALy4SHStq" title="라푼젤">
     <img src="./channel-img/1.disney/d.box5.jpg" alt="라푼젤">
     <div class="text">
-      <h2>라푼젤  <span class="star">9.34</span> </h2>
+      <h3>라푼젤  <span class="star">평점 9.34</span> </h3>
       <p>전체관람가</p>
       <p>애니메이션,코미디,가족,판타지</p>
     </div>
@@ -446,10 +412,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/big-hero-6/4AozFbXy3sPw">
+  <a href="https://www.disneyplus.com/ko-kr/movies/big-hero-6/4AozFbXy3sPw" title="빅히어로">
     <img src="./channel-img/1.disney/d.box6.jpg" alt="빅히어로">
     <div class="text">
-      <h2>빅히어로  <span class="star">9.28</span></h2>
+      <h3>빅히어로  <span class="star">평점 9.28</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,액션,코미디,가족</p>
     </div>
@@ -457,10 +423,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/ralph-breaks-the-internet/33T1xWWWLhFR">
+  <a href="https://www.disneyplus.com/ko-kr/movies/ralph-breaks-the-internet/33T1xWWWLhFR" title="주먹왕 랄프2">
     <img src="./channel-img/1.disney/d.box7.jpg" alt="주먹왕 랄프2">
     <div class="text">
-      <h2>주먹왕 랄프2  <span class="star">8.96</span></h2>
+      <h3>주먹왕 랄프2  <span class="star">평점 8.96</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,모험,코미디 </p>
     </div>
@@ -468,10 +434,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/moana/70GoJHflgHH9">
+  <a href="https://www.disneyplus.com/ko-kr/movies/moana/70GoJHflgHH9" title="모아나">
     <img src="./channel-img/1.disney/d.box8.jpg" alt="모아나">
     <div class="text">
-      <h2>모아나  <span class="star">9.18</span></h2>
+      <h3>모아나  <span class="star">평점 9.18</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,모험,코미디,가족 </p>
     </div>
@@ -479,30 +445,29 @@
 </li>
 
 <li>
-  <a href="">
+  <a href="https://www.disneyplus.com/ko-kr/movies/dumbo/1JtOLaonibHo" title="덤보">
     <img src="./channel-img/1.disney/d.box9.jpg" alt="덤보">
     <div class="text">
-      <h2>덤보  <span class="star">9.17</span></h2>
+      <h3>덤보  <span class="star">평점 9.17</span></h3>
       <p>전체관람가</p>
       <p>가족,판타지</p>
     </div>
   </a>
 </li>
-
    </ul>
+<input type="button" value="더보기" class="m-button">
   </article>
-</section>
+</div>
 
 <!-- 픽사 컨텐츠 -->
-<section class="content-wrap" id="p-channel" >
+<div id="p-channel" >
   <article class="wrap">
     <ul class="movie">
-
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/toy-story-4/2CtjW4tKzIHp">
+  <a href="https://www.disneyplus.com/ko-kr/movies/toy-story-4/2CtjW4tKzIHp" title="토이스토리4">
     <img src="./channel-img/2.pixar/p.box1.jpg" alt="토이스토리4">
     <div class="text">
-      <h2>토이스토리4 <span class="star">9.23</span></h2>
+      <h3>토이스토리4 <span class="star">평점 9.23</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,모험,코미디,가족</p>
     </div>
@@ -510,10 +475,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/_/5vQuMGjgTZz5">
+  <a href="https://www.disneyplus.com/ko-kr/movies/_/5vQuMGjgTZz5" title="몬스터 주식회사">
     <img src="./channel-img/2.pixar/p.box2.jpg" alt="몬스터 주식회사">
     <div class="text">
-      <h2>몬스터 주식회사 <span class="star">9.32</span></h2>
+      <h3>몬스터 주식회사 <span class="star">평점 9.32</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,가족,오락,판타지</p>
     </div>
@@ -521,10 +486,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/ratatouille/4zRnUvYGbUZG">
+  <a href="https://www.disneyplus.com/ko-kr/movies/ratatouille/4zRnUvYGbUZG" title="라따뚜이">
     <img src="./channel-img/2.pixar/p.box3.jpg" alt="라따뚜이">
     <div class="text">
-      <h2>라따뚜이  <span class="star">9.31</span></h2>
+      <h3>라따뚜이  <span class="star">평점 9.31</span></h3>
       <p>전체관람가</p>
       <p>코미디,가족,모험,애니메이션 </p>
     </div>
@@ -532,10 +497,10 @@
 </li>
 
 <li>
-   <a href="https://www.disneyplus.com/ko-kr/movies/inside-out/uzQ2ycVDi2IE">
+   <a href="https://www.disneyplus.com/ko-kr/movies/inside-out/uzQ2ycVDi2IE" title="인사이드 아웃">
      <img src="./channel-img/2.pixar/p.box4.jpg" alt="인사이드 아웃">
      <div class="text">
-      <h2>인사이드 아웃  <span class="star">9.05</span></h2>
+      <h3>인사이드 아웃  <span class="star">평점 9.05</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,코미디</p>
     </div>
@@ -543,10 +508,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/wall-e/5G1wpZC2Lb6I">
+  <a href="https://www.disneyplus.com/ko-kr/movies/wall-e/5G1wpZC2Lb6I" title="월e">
     <img src="./channel-img/2.pixar/p.box5.jpg" alt="월E">
     <div class="text">
-      <h2>월 E  <span class="star">9.42</span> </h2>
+      <h3>월 E  <span class="star">평점 9.42</span> </h3>
       <p>전체관람가</p>
       <p>애니메이션,SF,가족,코미디</p>
     </div>
@@ -554,10 +519,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/_/4Le2C4pyeB3J">
+  <a href="https://www.disneyplus.com/ko-kr/movies/_/4Le2C4pyeB3J" title="인크레더블2">
     <img src="./channel-img/2.pixar/p.box6.jpg" alt="인크레더블2">
     <div class="text">
-      <h2>인크레더블2  <span class="star">9.28</span></h2>
+      <h3>인크레더블2  <span class="star">평점 9.28</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,액션,모험</p>
     </div>
@@ -565,10 +530,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/finding-nemo/5Gpj2XqF7BV2">
+  <a href="https://www.disneyplus.com/ko-kr/movies/finding-nemo/5Gpj2XqF7BV2" title="니모를 찾아서">
     <img src="./channel-img/2.pixar/p.box7.jpg" alt="니모를 찾아서">
     <div class="text">
-      <h2>니모를 찾아서  <span class="star">9.22</span></h2>
+      <h3>니모를 찾아서  <span class="star">평점 9.22</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,모험,코미디,가족 </p>
     </div>
@@ -576,10 +541,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/cars-3/2uwOWguXyJe4">
+  <a href="https://www.disneyplus.com/ko-kr/movies/cars-3/2uwOWguXyJe4" title="카 3">
     <img src="./channel-img/2.pixar/p.box8.jpg" alt="카3">
     <div class="text">
-      <h2>카 3  <span class="star">8.62</span></h2>
+      <h3>카 3  <span class="star">평점 8.62</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,모험,코미디,가족 </p>
     </div>
@@ -587,10 +552,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/up/3XiRSXriK0E8">
+  <a href="https://www.disneyplus.com/ko-kr/movies/up/3XiRSXriK0E8" title="업">
     <img src="./channel-img/2.pixar/p.box9.jpg" alt="업">
     <div class="text">
-      <h2>업  <span class="star">9.33</span></h2>
+      <h3>업  <span class="star">평점 9.33</span></h3>
       <p>전체관람가</p>
       <p>애니메이션,모험,코미디,가족</p>
     </div>
@@ -598,19 +563,20 @@
 </li>
 
    </ul>
+   <input type="button" value="더보기" class="m-button">
   </article>
-</section>
+</div>
 
 <!-- 마블 컨텐츠 -->
-<section class="content-wrap" id="m-channel">
+<div id="m-channel">
   <article class="wrap">
     <ul class="movie">
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf">
+  <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf" title="어벤져스:엔드게임">
     <img src="./channel-img/3.marvel/m.box1.jpg" alt="어벤져스:엔드게임">
     <div class="text">
-      <h2>어벤져스:엔드게임 <span class="star">9.50</span></h2>
+      <h3>어벤져스:엔드게임 <span class="star">9.50</span></h3>
       <p>12세 관람가</p>
       <p>액션,SF</p>
     </div>
@@ -618,10 +584,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/iron-man/6aM2a8mZATiu">
+  <a href="https://www.disneyplus.com/ko-kr/movies/iron-man/6aM2a8mZATiu" title="아이언맨">
     <img src="./channel-img/3.marvel/m.box2.jpg" alt="아이언맨">
     <div class="text">
-      <h2>아이언맨 <span class="star">8.93</span></h2>
+      <h3>아이언맨 <span class="star">평점 8.93</span></h3>
       <p>12세 관람가</p>
       <p>SF,액션,드라마,판타지</p>
     </div>
@@ -629,10 +595,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-thor-ragnarok/3XqAT8UV8ojS">
+  <a href="https://www.disneyplus.com/ko-kr/movies/thor-love-and-thunder/3htR8mRAZMoT" title="토르:러브 앤 썬더">
     <img src="./channel-img/3.marvel/m.box3.jpg" alt="토르:러브 앤 썬더">
     <div class="text">
-      <h2>토르:러브 앤 썬더  <span class="star">6.69</span></h2>
+      <h3>토르:러브 앤 썬더  <span class="star">평점 6.69</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,판타지</p>
     </div>
@@ -640,10 +606,10 @@
 </li>
 
 <li>
-   <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-captain-america-civil-war/4ovfyKnnIBCg">
+   <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-captain-america-civil-war/4ovfyKnnIBCg" title="캡틴아메리카">
      <img src="./channel-img/3.marvel/m.box4.jpg" alt="캡틴 아메리카:시빌워">
      <div class="text">
-      <h2>캡틴 아메리카: 시빌워  <span class="star">8.83</span></h2>
+      <h3>캡틴 아메리카: 시빌워  <span class="star">평점 8.83</span></h3>
       <p>전체관람가</p>
       <p>액션,SF,스릴러 </p>
     </div>
@@ -651,10 +617,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-guardians-of-the-galaxy-vol-2/ZdRX4mMbp1gM">
+  <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-guardians-of-the-galaxy-vol-2/ZdRX4mMbp1gM" title="가디언즈오브갤럭시2">
     <img src="./channel-img/3.marvel/m.box5.jpg" alt="가디언즈오브갤럭시2">
     <div class="text">
-      <h2>가디언즈오브갤럭시2 <span class="star">9.05</span> </h2>
+      <h3>가디언즈오브갤럭시2 <span class="star">평점 9.05</span> </h3>
       <p>12세 관람가</p>
       <p>액션,SF</p>
     </div>
@@ -662,10 +628,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-doctor-strange/4GgMJ1aHKHA2">
+  <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-doctor-strange/4GgMJ1aHKHA2" title="닥터스트레인지">
     <img src="./channel-img/3.marvel/m.box6.jpg" alt="닥터스트레인지">
     <div class="text">
-      <h2>닥터스트레인지 <span class="star">8.88</span></h2>
+      <h3>닥터스트레인지 <span class="star">평점 8.88</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,판타지</p>
     </div>
@@ -674,9 +640,9 @@
 
 <li>
   <a href="#">
-    <img src="./channel-img/3.marvel/m.box7.jpg" alt="스파이더맨:홈커밍">
+    <img src="./channel-img/3.marvel/m.box7.jpg" alt="스파이더맨:홈커밍" title="스파이더맨:홈커밍">
     <div class="text">
-      <h2>스파이더맨:홈커밍  <span class="star">8.83</span></h2>
+      <h3>스파이더맨:홈커밍  <span class="star">평점 8.83</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,SF </p>
     </div>       
@@ -684,10 +650,10 @@
 </li> 
 
 <li>
-  <a href="#">
+  <a href="https://www.disneyplus.com/ko-kr/movies/black-widow/3VfTap90rwZC" title="블랙 위도우">
     <img src="./channel-img/3.marvel/m.box8.jpg" alt="블랙 위도우 ">
     <div class="text">
-      <h2>블랙 위도우  <span class="star">9.01</span></h2>
+      <h3>블랙 위도우  <span class="star">평점 9.01</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,SF</p>
     </div>
@@ -695,10 +661,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/marvel-studios-ant-man-and-the-wasp/5D7wkVHmlCKU">
+  <a href="https://www.disneyplus.com/ko-kr/movies/black-panther-wakanda-forever/7MAONYZ92wDT" title="블랙팬서:와칸다포에버">
     <img src="./channel-img/3.marvel/m.box9.jpg" alt="블랙팬서:와칸다 포에버">
     <div class="text">
-      <h2>블랙팬서:와칸다 포에버<span class="star">7.01</span></h2>
+      <h3>블랙팬서:와칸다 포에버<span class="star">평점 7.01</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,드라마</p>
     </div>
@@ -706,21 +672,22 @@
 </li>
 
    </ul>
+   <input type="button" value="더보기" class="m-button">
   </article>
-</section>
+</div>
 
 <!-- 스타워즈 컨텐츠 -->
-<section class="content-wrap" id="s-channel">
+<div  id="s-channel">
   <article class="wrap">
     <ul class="movie">
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-rise-of-skywalker-episode-ix/5e8JThYwCYgw">
-    <img src="./channel-img/4.star wars/s.box1.jpg" alt="스타워즈:
+  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-rise-of-skywalker-episode-ix/5e8JThYwCYgw" title="스타워즈 라이즈 오브 스카이 워커">
+    <img src="./channel-img/4.starwars/s.box1.jpg" alt="스타워즈:
     라이즈 오브 스카이 워커 ">
     <div class="text">
-      <h2>스타워즈:
-        라이즈 오브 스카이 워커 <span class="star">7.46</span></h2>
+      <h3>스타워즈:
+        라이즈 오브 스카이 워커 <span class="star">평점 7.46</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,판타지,SF</p>
     </div>
@@ -728,10 +695,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-last-jedi-episode-viii/1nCWFK1pmAI0">
-    <img src="./channel-img/4.star wars/s.box2.jpg" alt="스타워즈 라스트 제다이">
+  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-last-jedi-episode-viii/1nCWFK1pmAI0" title="스타워즈 라스트 제다이">
+    <img src="./channel-img/4.starwars/s.box2.jpg" alt="스타워즈 라스트 제다이">
     <div class="text">
-      <h2>스타워즈:라스트 제다이 <span class="star">7.80</span></h2>
+      <h3>스타워즈:라스트 제다이 <span class="star">평점 7.80</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,판타지,SF</p>
     </div>
@@ -739,10 +706,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-force-awakens-episode-vii/1LEKJPDPeMr7">
-    <img src="./channel-img/4.star wars/s.box3.jpg" alt="스타워즈:깨어난 포스">
+  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-force-awakens-episode-vii/1LEKJPDPeMr7" title="스타워즈:깨어난 포스">
+    <img src="./channel-img/4.starwars/s.box3.jpg" alt="스타워즈:깨어난 포스">
     <div class="text">
-      <h2>스타워즈:깨어난 포스  <span class="star">8.21</span></h2>
+      <h3>스타워즈:깨어난 포스  <span class="star">평점 8.21</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,판타지 </p>
     </div>
@@ -750,10 +717,10 @@
 </li>
 
 <li>
-   <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-revenge-of-the-sith-episode-iii/4WvbqLFumNvi">
-     <img src="./channel-img/4.star wars/s.box4.jpg" alt="스타워즈:시스의 복수">
+   <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-revenge-of-the-sith-episode-iii/4WvbqLFumNvi" title="스타워즈:시스의 복수">
+     <img src="./channel-img/4.starwars/s.box4.jpg" alt="스타워즈:시스의 복수">
      <div class="text">
-      <h2>스타워즈:시스의 복수  <span class="star">9.11</span></h2>
+      <h3>스타워즈:시스의 복수  <span class="star">평점 9.11</span></h3>
       <p>전체관람가</p>
       <p>SF,모험,액션 </p>
     </div>
@@ -761,10 +728,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-attack-of-the-clones-episode-ii/mgpYHGnzZW6N">
-    <img src="./channel-img/4.star wars/s.box5.jpg" alt="스타워즈:클론의 습격">
+  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-attack-of-the-clones-episode-ii/mgpYHGnzZW6N" title="스타워즈 클론의 습격">
+    <img src="./channel-img/4.starwars/s.box5.jpg" alt="스타워즈:클론의 습격">
     <div class="text">
-      <h2>스타워즈:클론의 습격  <span class="star">7.80</span> </h2>
+      <h3>스타워즈:클론의 습격  <span class="star">평점 7.80</span> </h3>
       <p>전체관람가</p>
       <p>SF,모험,전쟁,드라마</p>
     </div>
@@ -772,10 +739,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-phantom-menace-episode-i/2ezYynkgW1AH">
-    <img src="./channel-img/4.star wars/s.box6.jpg" alt="스타워즈:보이지 않는 위험">
+  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-phantom-menace-episode-i/2ezYynkgW1AH" title="스타워즈:보이지 않는 위험">
+    <img src="./channel-img/4.starwars/s.box6.jpg" alt="스타워즈:보이지 않는 위험">
     <div class="text">
-      <h2>스타워즈:보이지 않는 위험  <span class="star">7.97</span></h2>
+      <h3>스타워즈:보이지 않는 위험  <span class="star">평점 7.97</span></h3>
       <p>전체관람가</p>
       <p>SF,액션</p>
     </div>
@@ -783,10 +750,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-return-of-the-jedi-episode-vi/6QGKo5mjDBS8">
-    <img src="./channel-img/4.star wars/s.box7.jpg" alt="스타워즈:제다이의 귀환">
+  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-return-of-the-jedi-episode-vi/6QGKo5mjDBS8" title="스타워즈:제다이의 귀환">
+    <img src="./channel-img/4.starwars/s.box7.jpg" alt="스타워즈:제다이의 귀환">
     <div class="text">
-      <h2>스타워즈:제다이의 귀환  <span class="star">9.01</span></h2>
+      <h3>스타워즈:제다이의 귀환  <span class="star">평점 9.01</span></h3>
       <p>전체관람가</p>
       <p>SF,모험,액션,판타지 </p>
     </div>
@@ -794,10 +761,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-empire-strikes-back-episode-v/iqtDTZAewwYl">
-    <img src="./channel-img/4.star wars/s.box8.jpg" alt="스타워즈:제국의 역습">
+  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-the-empire-strikes-back-episode-v/iqtDTZAewwYl" title="스타워즈:제국의 역습">
+    <img src="./channel-img/4.starwars/s.box8.jpg" alt="스타워즈:제국의 역습">
     <div class="text">
-      <h2>스타워즈:제국의 역습<span class="star">9.10</span></h2>
+      <h3>스타워즈:제국의 역습<span class="star">평점 9.10</span></h3>
       <p>전체관람가</p>
       <p>SF,모험,액션,판타지 </p>
     </div>
@@ -805,10 +772,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ">
-    <img src="./channel-img/4.star wars/s.box9.jpg" alt="스타워즈:새로운 희망">
+  <a href="https://www.disneyplus.com/ko-kr/movies/star-wars-a-new-hope-episode-iv/12fVeZxD2fWJ" title="스타워즈:새로운 희망">
+    <img src="./channel-img/4.starwars/s.box9.jpg" alt="스타워즈:새로운 희망">
     <div class="text">
-      <h2>스타워즈:새로운 희망<span class="star">9.03</span></h2>
+      <h3>스타워즈:새로운 희망<span class="star">평점 9.03</span></h3>
       <p>전체관람가</p>
       <p>SF,모험,액션,판타지</p>
     </div>
@@ -816,19 +783,20 @@
 </li>
 
    </ul>
+   <input type="button" value="더보기" class="m-button">
   </article>
-</section>
+</div>
 
 <!-- 네셔널 컨텐츠 -->
-<section class="content-wrap" id="n-channel">
+<div id="n-channel">
   <article class="wrap">
     <ul class="movie">
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/apollo-missions-to-the-moon/1f6BzHy0ikUs">
+  <a href="https://www.disneyplus.com/ko-kr/movies/apollo-missions-to-the-moon/1f6BzHy0ikUs" title="아폴로 미션 투 더 문">
     <img src="./channel-img/5.national/n.box1.jpg" alt="아폴로 미션 투 더 문">
     <div class="text">
-      <h2>아폴로 미션 투 더 문</h2>
+      <h3>아폴로 미션 투 더 문</h3>
       <p>12세 관람가</p>
       <p>다큐멘터리,역사,가족</p>
     </div>
@@ -836,10 +804,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/expedition-mars-spirit-opportunity/1QCo8zoX1mM7">
+  <a href="https://www.disneyplus.com/ko-kr/movies/expedition-mars-spirit-opportunity/1QCo8zoX1mM7" title="화성 탐사 로봇 생존기">
     <img src="./channel-img/5.national/n.box2.jpg" alt="화성 탐사 로봇 생존기">
     <div class="text">
-      <h2>화성 탐사 로봇 생존기</h2>
+      <h3>화성 탐사 로봇 생존기</h3>
       <p>전체관람가</p>
       <p>다큐멘터리</p>
     </div>
@@ -847,10 +815,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/expedition-everest/4XFY7zRsoAxo">
+  <a href="https://www.disneyplus.com/ko-kr/movies/expedition-everest/4XFY7zRsoAxo" title="에베레스트 탐험대">
     <img src="./channel-img/5.national/n.box3.jpg" alt="에베레스트 탐험대">
     <div class="text">
-      <h2>에베레스트 탐험대</h2>
+      <h3>에베레스트 탐험대</h3>
       <p>12세 관람가</p>
       <p>다큐멘터리,동물,자연 </p>
     </div>
@@ -858,10 +826,10 @@
 </li>
 
 <li>
-   <a href="https://www.disneyplus.com/ko-kr/movies/before-the-flood/3oY6tZ6FqpMf">
+   <a href="https://www.disneyplus.com/ko-kr/movies/before-the-flood/3oY6tZ6FqpMf" title="비포 더 플러드">
      <img src="./channel-img/5.national/n.box4.jpg" alt="비포 더 플러드">
      <div class="text">
-      <h2>비포 더 플러드</h2>
+      <h3>비포 더 플러드</h3>
       <p>전체관람가</p>
       <p>다큐멘터리 </p>
     </div>
@@ -869,10 +837,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/mission-to-the-sun/39IbWF2bThid">
+  <a href="https://www.disneyplus.com/ko-kr/movies/mission-to-the-sun/39IbWF2bThid" title="미션임파서블 : 태양">
     <img src="./channel-img/5.national/n.box5.jpg" alt="미션임파서블:태양 탐사선 파커">
     <div class="text">
-      <h2>미션임파서블:태양 탐사선 파커</h2>
+      <h3>미션임파서블:태양 탐사선 파커</h3>
       <p>전체관람가</p>
       <p>다큐멘터리</p>
     </div>
@@ -880,10 +848,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/atlantis-rising/2pZJOgic44YJ">
+  <a href="https://www.disneyplus.com/ko-kr/movies/atlantis-rising/2pZJOgic44YJ" title="사라진 대륙 아틀란티스">
     <img src="./channel-img/5.national/n.box6.jpg" alt="사라진 대륙 아틀란티스">
     <div class="text">
-      <h2>사라진 대륙 아틀란티스</h2>
+      <h3>사라진 대륙 아틀란티스</h3>
       <p>전체관람가</p>
       <p>다큐멘터리,역사</p>
     </div>
@@ -891,10 +859,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/buried-truth-of-the-maya/62q29QZC53vW">
+  <a href="https://www.disneyplus.com/ko-kr/movies/buried-truth-of-the-maya/62q29QZC53vW" title="마야 문명의 숨겨진 진실">
     <img src="./channel-img/5.national/n.box7.jpg" alt="마야 문명의 숨겨진 진실">
     <div class="text">
-      <h2>마야 문명의 숨겨진 진실</h2>
+      <h3>마야 문명의 숨겨진 진실</h3>
       <p>전체관람가</p>
       <p>다큐멘터리,역사 </p>
     </div>
@@ -902,10 +870,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/stonehenge-decoded-secrets-revealed/2OOlrJ5RY2tJ">
+  <a href="https://www.disneyplus.com/ko-kr/movies/stonehenge-decoded-secrets-revealed/2OOlrJ5RY2tJ" title="세계 7대 불가사의 스톤헨지의 비밀">
     <img src="./channel-img/5.national/n.box8.jpg" alt="세계 7대 불가사의 스톤헨지의 비밀">
     <div class="text">
-      <h2>세계 7대 불가사의 스톤헨지의 비밀</h2>
+      <h3>세계 7대 불가사의 스톤헨지의 비밀</h3>
       <p>전체관람가</p>
       <p>다큐멘터리 </p>
     </div>
@@ -913,10 +881,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/expedition-amelia/6iFF9zo4khBy">
+  <a href="https://www.disneyplus.com/ko-kr/movies/expedition-amelia/6iFF9zo4khBy" title="아멜리아 에어하트를 찾아서">
     <img src="./channel-img/5.national/n.box9.jpg" alt="아멜리아 에어하트를 찾아서">
     <div class="text">
-      <h2>아멜리아 에어하트를 찾아서</h2>
+      <h3>아멜리아 에어하트를 찾아서</h3>
       <p>12세 관람가</p>
       <p>다큐멘터리,역사</p>
     </div>
@@ -924,19 +892,20 @@
 </li>
 
    </ul>
+   <input type="button" value="더보기" class="m-button">
   </article>
-</section>
+</div>
 
 <!-- 20세기 컨텐츠 -->
-<section class="content-wrap" id="f-channel">
+<div  id="f-channel">
   <article class="wrap">
     <ul class="movie">
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/avatar-the-way-of-water/6hlsDJnhiU30">
+  <a href="https://www.disneyplus.com/ko-kr/movies/avatar-the-way-of-water/6hlsDJnhiU30" title="아바타:물의 길">
     <img src="./channel-img/6.20century/f.box1.jpg" alt="아바타:물의 길">
     <div class="text">
-      <h2>아바타:물의 길 <span class="star">8.82</span></h2>
+      <h3>아바타:물의 길 <span class="star">평점 8.82</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,SF,스릴러</p>
     </div>
@@ -944,10 +913,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/-/8ElyHmLZJyGQ">
+  <a href="https://www.disneyplus.com/ko-kr/movies/-/8ElyHmLZJyGQ" title="엑스맨:아포칼립스">
     <img src="./channel-img/6.20century/f.box2.jpg" alt="엑스맨:아포칼립스">
     <div class="text">
-      <h2>엑스맨:아포칼립스 <span class="star">8.24</span></h2>
+      <h3>엑스맨:아포칼립스 <span class="star">평점 8.24</span></h3>
       <p>전체관람가</p>
       <p>액션,모험,판타지,SF</p>
     </div>
@@ -955,10 +924,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/bohemian-rhapsody/6wz88QNEqaj6">
+  <a href="https://www.disneyplus.com/ko-kr/movies/bohemian-rhapsody/6wz88QNEqaj6" title="보헤미안 랩소디">
     <img src="./channel-img/6.20century/f.box3.jpg" alt="보헤미안 랩소디">
     <div class="text">
-      <h2>보헤미안 랩소디  <span class="star">9.45</span></h2>
+      <h3>보헤미안 랩소디  <span class="star">평점 9.45</span></h3>
       <p>12세 관람가</p>
       <p>드라마</p>
     </div>
@@ -966,10 +935,10 @@
 </li>
 
 <li>
-   <a href="https://www.disneyplus.com/ko-kr/movies/deadpool-2/LSuXSQ3S5mxU">
-     <img src="./channel-img/6.20century/f.box4.jpg" alt="데드폴2">
+   <a href="https://www.disneyplus.com/ko-kr/movies/fantastic-four/3ctHqNJpmuke" title="판타스틱4">
+     <img src="./channel-img/6.20century/f.box4.jpg" alt="판타스틱4">
      <div class="text">
-      <h2>판타스틱 4<span class="star">9.09</span></h2>
+      <h3>판타스틱 4<span class="star">평점 9.09</span></h3>
       <p>12세 관람가</p>
       <p>액션,SF</p>
     </div>
@@ -977,10 +946,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/maze-runner-the-death-cure/weKs7rAjCW6H">
+  <a href="https://www.disneyplus.com/ko-kr/movies/maze-runner-the-death-cure/weKs7rAjCW6H" title="메이즈러너:데스큐어">
     <img src="./channel-img/6.20century/f.box5.jpg" alt="메이즈러너:데스큐어">
     <div class="text">
-      <h2>메이즈러너:데스큐어<span class="star">8.15</span> </h2>
+      <h3>메이즈러너:데스큐어<span class="star">평점 8.15</span> </h3>
       <p>12세 관람가</p>
       <p>액션,SF,스릴러</p>
     </div>
@@ -988,10 +957,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/kingsman-the-secret-service/KU1ZHosjEuhK">
+  <a href="https://www.disneyplus.com/ko-kr/movies/alien-covenant/42uYz25lgzx5" title="에이리언">
     <img src="./channel-img/6.20century/f.box6.jpg" alt="에이리언 커버넌트">
     <div class="text">
-      <h2>에이리언 커버넌트<span class="star">9.32</span></h2>
+      <h3>에이리언 커버넌트<span class="star">평점 9.32</span></h3>
       <p>15세 관람가</p>
       <p>SF,스릴러,공포</p>
     </div>
@@ -999,10 +968,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/war-for-the-planet-of-the-apes/5H1LtGAXmflN">
+  <a href="https://www.disneyplus.com/ko-kr/movies/war-for-the-planet-of-the-apes/5H1LtGAXmflN" title="혹성탈출:종의전쟁">
     <img src="./channel-img/6.20century/f.box7.jpg" alt="혹성탈출:종의 전쟁">
     <div class="text">
-      <h2>혹성탈출:종의 전쟁<span class="star">8.15</span></h2>
+      <h3>혹성탈출:종의 전쟁<span class="star">평점 8.15</span></h3>
       <p>12세 관람가</p>
       <p>액션,모험,드라마,SF </p>
     </div>
@@ -1010,10 +979,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/taken-3/2fWIpMGP0dYS">
+  <a href="https://www.disneyplus.com/ko-kr/movies/taken-3/2fWIpMGP0dYS" title="테이큰3">
     <img src="./channel-img/6.20century/f.box8.jpg" alt="테이큰3">
     <div class="text">
-      <h2>테이큰3<span class="star">8.07</span></h2>
+      <h3>테이큰3<span class="star">평점 8.07</span></h3>
       <p>15세 관람가</p>
       <p>액션,범죄,스릴러</p>
     </div>
@@ -1021,10 +990,10 @@
 </li>
 
 <li>
-  <a href="https://www.disneyplus.com/ko-kr/movies/the-greatest-showman/66TvI61aPddY">
+  <a href="https://www.disneyplus.com/ko-kr/movies/the-greatest-showman/66TvI61aPddY" title="위대한 쇼맨">
     <img src="./channel-img/6.20century/f.box9.jpg" alt="위대한 쇼맨">
     <div class="text">
-      <h2>위대한 쇼맨<span class="star">9.31</span></h2>
+      <h3>위대한 쇼맨<span class="star">평점 9.31</span></h3>
       <p>12세 관람가</p>
       <p>드라마,뮤지컬</p>
     </div>
@@ -1032,19 +1001,22 @@
 </li>
 
    </ul>
+   <input type="button" value="더보기" class="m-button">
   </article> 
   <!-- 하단 번호 -->
   
-</section>    
+</div>    
 </div>
+
+
 <div class="number_wrap">
   <ul class="number">
-    <li><a href="">1</a></li>
-    <li><a href="">2</a></li>
-    <li><a href="">3</a></li>
-    <li><a href="">4</a></li>
-    <li><a href="">5</a></li>
-    <li><a href="">></a></li>
+    <li><a href="#none" title="1">1</a></li>
+    <li><a href="#none" title="2">2</a></li>
+    <li><a href="#none" title="3">3</a></li>
+    <li><a href="#none" title="4">4</a></li>
+    <li><a href="#none" title="5">5</a></li>
+    <li><a href="#none" title=">">></a></li>
   </ul>
 </div>
 

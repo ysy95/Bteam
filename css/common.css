@@ -6,11 +6,7 @@ a{text-decoration: none;
   color:#fff;}
   #toggle, label[for=toggle]{display: none;}
 footer > dl dt{ display: none;}
-header{
-    background:#0A2647;
-    height:70px;
-    position:relative;
-  }
+
   .h_top > h1 img{width:100%;}
   /* gnb에 마우스올리면 서브메뉴 나오게 */
 
@@ -23,6 +19,12 @@ header{
   }
 /* PC버전 */
 @media screen and (min-width:1025px) {
+  header{
+    background:#0A2647;
+    height:70px;width: 100%;
+    position:fixed;
+    top:0px;
+  }
   i.fa-bars, .sub_btn, .close_btn{display: none;}
   .h_top{
     width:1040px;
@@ -374,7 +376,7 @@ footer > address{
   .gnb > ul > li .sub_btn img{width:100%;}
   .lnb{
     position: fixed;
-    top:25rem;right:0px;
+    top:40rem;right:0px;
     width:70%;height:20%;
     z-index: 1;
   }

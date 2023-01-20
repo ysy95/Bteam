@@ -123,4 +123,30 @@ $('.f1').click(function(){
   $('#n_wrap').css('display','none');
   $('#f_wrap').css('display','block');
 });
+
+
+$(window).resize(function(){
+  if($(window).width()<768){
+    $('.movie li:last-child').css('display','none');
+  }
+  else{
+    $('.movie li:last-child').css('display','block');
+  }
+});
+
+$('.m-button').click(function(){
+  $('.movie li:nth-child(4)').nextAll().css('display','block');
+  $('.movie li:last-child').css('display','none');
+  $(this).css('display','none');
+  $('.number_wrap').css('display','block');
+});
+
+
+
+
+
+
+
+
+
 });
