@@ -1,18 +1,20 @@
 @charset "utf-8";
-
+section{
+  margin-top: 100px;
+}
 /* pc버전 */
 @media screen and (min-width:1025px){
 
   main{
     width:100%;
-    height:1000px;
+    height:900px;
     /* display:flex; */
     justify-content: center;
     align-items: center;
     /* margin:0px 0px 150px 0px; */
     }
 
-  article h2 img{
+  .logo{
   margin:50px 0px 30px 0px;
   width:10rem;
   margin-left:50%;
@@ -21,9 +23,7 @@
 
 
   .top{
-  color:#0A2647;
-  /* background-color: rgb(231, 89, 229); */
-  }
+  color:#0A2647;}
   .top p{
   margin-bottom: 30px;
   font-size:14px;
@@ -129,13 +129,13 @@
     height:710px;
     /* background-color: bisque; */
     }
-  
-    article h2 img{
-    margin:50px 0px 30px 0px;
-    width:10rem;
-    margin-left:50%;
-    transform:translate(-50%);
-    }
+
+    .logo{
+      margin:50px 0px 30px 0px;
+      width:10rem;
+      margin-left:50%;
+      transform:translate(-50%);
+      }
   
   
     .top{
@@ -163,7 +163,8 @@
     .sub_form{
     /* background-color: aquamarine; */
     width:430px;height:260px;
-    margin:0px auto;
+    margin-left:50%;
+    transform:translateX(-50%);
     padding-bottom: 30px;
     }
   
@@ -248,12 +249,12 @@
     /* background-color: bisque; */
     }
   
-    article h2 img{
-    margin:50px 0px 30px 0px;
-    width:10rem;
-    margin-left:50%;
-    transform:translate(-50%);
-    }
+    .logo{
+      margin:50px 0px 30px 0px;
+      width:10rem;
+      margin-left:50%;
+      transform:translate(-50%);
+      }
   
   
     .top{
@@ -281,12 +282,13 @@
     .sub_form{
     /* background-color: aquamarine; */
     width:430px;height:260px;
-    margin:0px auto;
+    margin-left:50%;
+    transform: translateX(-35%);
     padding-bottom: 30px;
     }
   
     .int_area input,.btn_area button{
-      width:250px;
+      width:314px;
       height:50px;
       /* margin:0px auto; */
     }
@@ -303,7 +305,6 @@
       font-weight:bold;
       /* margin-left:0px; */
       cursor:pointer;
-      width: 255px;
       
     }
   
@@ -329,25 +330,24 @@
     margin-top:5px;
     margin-bottom: 50px;
     /* margin-left:65px; */
-    font-size:0.85rem;}
+    font-size:14px;}
   
     .caption a{
     color:#000;
     /* font-size: 13px; */
     }
     .find{
-    margin-left:3rem;
+    margin-left:105px;
     }
     .line{
-    width:75%;
+    width:80%;
     /* background-color: aqua; */
     border-top:1px solid #000;
     margin-left:-5%;
     }
     .signin{
-    margin-left:15px;
+    margin-left:30px;
     margin-top:10px;
-    font-size: 1rem;
     }
   
     .signin a{

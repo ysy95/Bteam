@@ -247,7 +247,7 @@ a[title="맨위로올라가기"] img{
     line-height: 80px;
     color:#fff;
     margin:0 auto;
-    font-size: 50px;
+    font-size: 40px;
     opacity: 0;
     z-index:200;
 
@@ -1056,7 +1056,7 @@ a[title="맨위로올라가기"] img{
   .b_gallery .brand img{width:75%;}
   .b_gallery > .brand:first-child img{padding:1.25rem 0px 0px 1.4rem;}
   .b_gallery > .brand:nth-child(2) img{padding:30px 5px 0px 1.3rem;}
-  .b_gallery > .brand:nth-child(3) img{padding:-5px 0px 0px 1.5rem;}
+  .b_gallery > .brand:nth-child(3) img{padding:5px 0px 0px 1.5rem;}
   .b_gallery > .brand:nth-child(4) img{padding:1.1rem 0px 0px 1.6rem;}
   .b_gallery > .brand:nth-child(5) img{padding:12px 0px 0px 1.4rem;}
   .b_gallery > .brand:last-child img{padding:0px 0px 12px 2.3rem;width:55%;}
@@ -1075,6 +1075,17 @@ a[title="맨위로올라가기"] img{
     border-bottom: solid 2px #333;
     padding:0.9375rem 0px;
     box-shadow: 0px 3px 0px #ccc;
+    position: relative;
+  }
+  .n_wrap > h2 > a{
+    color:#333;
+    padding:3px 8px 3px 13px;
+    border: solid 1px #333;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    position:absolute;
+    right:10px;
+
   }
   .n_wrap > .news_con{
     margin:2.5rem 0px 6.25rem 0px;

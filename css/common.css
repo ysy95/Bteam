@@ -17,6 +17,7 @@ footer > dl dt{ display: none;}
     display:block;
     position:relative;top:-14px;left:59px;
   }
+
 /* PC버전 */
 @media screen and (min-width:1025px) {
   header{

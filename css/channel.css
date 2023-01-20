@@ -89,6 +89,13 @@
 }
 /* sns5개 */
 @media screen and (min-width:1025px){
+  header{
+    background:#0A2647;
+    height:70px;width: 100%;
+    position:fixed;
+    top:0px;
+    z-index: 200000;
+  }
 /* 파트너사 */
 .channel{
   width: 1040px;
