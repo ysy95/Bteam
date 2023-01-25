@@ -103,7 +103,7 @@ a[title="맨위로올라가기"] img{
     background: rgb(255, 255, 255);
     position: relative;
     top:-60px;
-    background-image: url('../main_img/event-bg.png');
+    background-image: url('../img/event-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
@@ -237,10 +237,10 @@ a[title="맨위로올라가기"] img{
     height:350px;
   }
   .disney_films > ul > li:first-child{
-    background-image: url('../main_img/movie1.png');
+    background-image: url('../img/movie1.png');
     background-size: cover;}
-  .disney_films > ul > li:nth-child(2){background-image: url('../main_img/movie2.png');background-size: cover;}
-  .disney_films > ul > li:last-child{background-image: url('../main_img/movie3.png');background-size: cover;}
+  .disney_films > ul > li:nth-child(2){background-image: url('../img/movie2.png');background-size: cover;}
+  .disney_films > ul > li:last-child{background-image: url('../img/movie3.png');background-size: cover;}
   .disney_films > ul > li > .film_txt{
     position:absolute;
     left:0px; top:40px;
@@ -311,7 +311,7 @@ a[title="맨위로올라가기"] img{
   }
   .b_wrap > .b_gallery{
     display: grid;
-    background-image: url('../main_img/brand_bg.jpg');
+    background-image: url('../img/brand_bg.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     grid-gap: 10px;
@@ -463,7 +463,7 @@ a[title="맨위로올라가기"] img{
     background: #fff;
     position: relative;
     top:-40px;
-    background-image: url('../main_img/event-bg.png');
+    background-image: url('../img/event-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
@@ -590,18 +590,18 @@ a[title="맨위로올라가기"] img{
     height:300px;
   }
   .disney_films > ul > li:first-child{
-    background-image: url('../main_img/movie1.png');
+    background-image: url('../img/movie1.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
   .disney_films > ul > li:nth-child(2){
-    background-image: url('../main_img/movie2.png');
+    background-image: url('../img/movie2.png');
     background-size: cover;
     background-repeat: no-repeat;
 
   }
   .disney_films > ul > li:last-child{
-    background-image: url('../main_img/movie3.png');
+    background-image: url('../img/movie3.png');
     background-size: cover;
       background-repeat: no-repeat;
 }
@@ -667,7 +667,7 @@ a[title="맨위로올라가기"] img{
   }
   .b_wrap > .b_gallery{
     display: grid;
-    background-image: url('../main_img/brand_bg.jpg');
+    background-image: url('../img/brand_bg.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     grid-gap: 10px;
@@ -818,7 +818,7 @@ a[title="맨위로올라가기"] img{
   .event{
     background: #fff;
     position: relative;top:25px;
-    background-image: url('../main_img/event-bg.png');
+    background-image: url('../img/event-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
@@ -960,17 +960,17 @@ a[title="맨위로올라가기"] img{
     height:300px;width:100%;
   }
   .disney_films > ul > li:first-child{
-    background-image: url('../main_img/m_movie1.png');
+    background-image: url('../img/m_movie1.png');
     background-size: cover ;
     background-repeat: no-repeat;
   }
   .disney_films > ul > li:nth-child(2){
-    background-image: url('../main_img/m_movie2.png');
+    background-image: url('../img/m_movie2.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
   .disney_films > ul > li:last-child{
-    background-image: url('../main_img/m_movie3.png');
+    background-image: url('../img/m_movie3.png');
     background-size: cover;
     background-repeat: no-repeat;
     transform: translateY(-1rem);
@@ -1040,7 +1040,7 @@ a[title="맨위로올라가기"] img{
   }
   .b_wrap > .b_gallery{
     display: grid;
-    background-image: url('../main_img/m_brand_bg.png');
+    background-image: url('../img/m_brand_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     grid-gap: 0.5rem;

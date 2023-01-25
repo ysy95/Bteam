@@ -5,7 +5,7 @@ ul,ol,li{list-style: none;}
 a{text-decoration: none;
   color:#fff;}
   #toggle, label[for=toggle]{display: none;}
-footer > dl dt{ display: none;}
+footer > #footer_wrap dl dt{ display: none;}
 
   .h_top > h1 img{width:100%;}
   /* gnb에 마우스올리면 서브메뉴 나오게 */
@@ -122,7 +122,7 @@ footer > dl dt{ display: none;}
 footer{
   background: #0A2647;
   width:100%;
-  height: 150px;
+  height: 220px;
   color:#fff;
   font-size: 12px;
   box-sizing: border-box;
@@ -130,35 +130,36 @@ footer{
   bottom: 0px;
 }
 
-footer dl > .f_logo img{
+footer > #footer_wrap dl > .f_logo img{
   width: 140px;
-  transform: translateY(35%);
+  transform: translateY(50%);
 }
-footer > dl{
+footer >#footer_wrap dl{
   
   width: 1040px;
   display: flex;
   margin:0px auto;
 
 }
-footer > dl > dd{
+footer >#footer_wrap dl > dd{
   padding:13px 40px 5px 0px;
-  line-height: 25px;
+  line-height: 35px;
 }
-footer > dl > .box{
+footer >#footer_wrap dl > .box{
   width:120px;
 }
-.f_last{
-  padding-top: 90px;
-  transform: translateX(40px);
+#footer_wrap dl> .f_last{
+  padding-top: 120px;
+  transform: translateX(60px);
 }
-footer > address{
+footer >#footer_wrap > address{
+  position:relative;
+  bottom: 0px;
   width:1040px;
-  /* font-size: 12px; */
   font-style: normal;
   text-align: center;
   border-top: solid 1px #fff;
-  line-height: 30px;
+  line-height: 55px;
   margin:0 auto;
 }
 
@@ -261,48 +262,49 @@ footer > address{
 footer{
   background: #0A2647;
   width:100%;
-  height: 150px;
+  height: 220px;
   color:#fff;
   font-size: 75%;
   position:relative;
   bottom: 0px;
 
 }
-footer > dl dt{
-  display: none;
-}
-footer dl > .f_logo img{
-  width: 7rem;
-  transform: translateY(1.4rem);
-}
-footer > dl{
-  width: 49rem;height: 5.5rem;
-  display: flex;
+footer > #footer_wrap{
+  width:49rem;
   margin:0 auto;
-
 }
-footer > dl > dd{
+footer >#footer_wrap dl > .f_logo img{
+  width: 7rem;
+  transform: translateY(2rem);
+}
+footer >#footer_wrap dl{
+  position: relative;
+  width: 100%; 
+  display: flex;
+  margin: 30px 0px 20px 0px;
+}
+footer >#footer_wrap dl > dd{
   padding:0.8rem 1.7rem 0.4rem 0rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
-.f_last{
+#footer_wrap dl > .f_last{
   width:5.625rem;
-  padding: 5rem 0.5rem 0rem 0rem;
-  transform: translateX(1.4rem);
+  padding: 7rem 0.5rem 0rem 0rem;
+  transform: translateX(1.2rem);
 }
-.f_last:first-of-type{padding-left: 1rem;}
+.f_last:first-of-type{padding-left: 1.2rem;}
 .f_last > select{
   width:7rem;
   margin-left: 1.2rem;
 }
-footer > address{
+footer >#footer_wrap > address{
   width:49rem;
   font-style: normal;
   text-align: center;
   border-top: solid 1px #fff;
-  line-height: 1.875rem;
-  margin:1.8rem auto;
+  line-height: 3rem;
+  position: absolute;
 }
 }
 
@@ -408,46 +410,49 @@ footer > address{
     position:relative;
     background: #0A2647;
     width:100%;
-    height: 280px;
+    height: 350px;
     color:#fff;
     font-size: 0.75rem;
     position:relative;
     bottom: 0px;
+  }
+  footer > #footer_wrap{
+    width:19.6rem;
+    margin: 0 auto;
+
   }
   footer dl > .f_logo img{
     width: 6.8rem;
     margin-top:20px;
     margin-bottom:10px;
   }
-  footer > dl{
-    width: 19.6rem;
+  footer >#footer_wrap dl{
+    position: absolute;top:0px;
+    width: 100%;
     height:15.8rem;
     display:block;
-    margin:0 auto;
+    margin:7px 0px;
   }
-  footer > dl > dd{
+  footer >#footer_wrap dl > dd{
     padding:0rem 1.7rem 1rem 0rem;
-    line-height: 1.2rem;
+    line-height: 1.6rem;
     margin-top:-.8rem;
   }
-  .f_last{
-    float:left;
-    margin-right: -20px;
-  }
-  .f_last:last-of-type{clear:both;}
-  .f_last a{width:5rem;}
   .f_last > select{
     width:8rem;
     margin-top:5px;
   }
-  footer > address{
+  footer > #footer_wrap > address{
     margin: 0px auto;
     width:20rem;
     font-style: normal;
     text-align: center;
     border-top: solid 1px #fff;
-    line-height: 1.625rem;
+    line-height: 2.6rem;
     font-size: 0.625rem;
+    position: absolute;
+    bottom: 0px;
+
   }
   /* .f_last:first-of-type > a::after {
     position: relative;
